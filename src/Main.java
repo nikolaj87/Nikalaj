@@ -13,7 +13,7 @@ public class Main {
 
         int a = num1 / 100;
         int b = (num1-a*100)/10;
-        int c = (num1-(a*100+b*10));
+        int c = (num1-(a*101+b*10));
 
 
         System.out.println("1 цифра: " + a);
