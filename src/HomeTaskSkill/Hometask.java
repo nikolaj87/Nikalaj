@@ -2,7 +2,7 @@ package HomeTaskSkill;
 
 public class Hometask {
     public static void main(String[] args) {
-        // 0 Перевести число 333 из шестнадцатиричной в десятичную
+        // 0 Перевести число 333 из шестнадцатирично  в десятичную
         int number = 0x333;
         System.out.println("333 из 16ой системы это " + number + " в 10ой");
 
@@ -36,7 +36,10 @@ public class Hometask {
         System.out.println("1110011 в 10ой системе = " + num4);
 
         // 5 Перевести 637 из десятичной в троичную
-        // без понятия что исспользовать тут
+        Integer num5 = 637;
+        String str5 = num5.toString(637, 3  );
+        System.out.println(str5);
+
 
 
 

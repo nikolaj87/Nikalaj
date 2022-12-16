@@ -1,4 +1,4 @@
-package lessons;
+package Lessons;
 
 public class WorkWithString {
     public static void main(String[] args) {
