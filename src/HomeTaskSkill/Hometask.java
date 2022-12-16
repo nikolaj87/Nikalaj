@@ -2,7 +2,7 @@ package HomeTaskSkill;
 
 public class Hometask {
     public static void main(String[] args) {
-        // 0 Перевести число 333 из шестнадцатиричной в десятичную
+        // 0 Перевести число 333 из шестнадцатирично  в десятичную
         int number = 0x333;
         System.out.println("333 из 16ой системы это " + number + " в 10ой");
 
