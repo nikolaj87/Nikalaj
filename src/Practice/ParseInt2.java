@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class ParseInt2 {
     public static void main(String[] args) {
-        String str, str2 ="";
+        String str;
         boolean flag;
         int i = 0;
 
@@ -14,15 +14,14 @@ class ParseInt2 {
             Scanner scanner = new Scanner(System.in);
             System.out.println("введите число и получите х2: ");
             str = scanner.nextLine();
-
+            // чтоб пропустить цифры с + и - проводим проверку
             if (str.charAt(0) == '-'||str.charAt(0) =='+') i++;
-            // целый час не мог понять почему не работает логическое или || нужен именно equals
+            // запускаем цикл посимвольной проверки
             for (; i < str.length(); i++) {
-                    str2 = str.charAt(i) + "";
-                if (str2.equals("0")|str2.equals("1")|str2.equals("2")|
-                        str2.equals("3")|str2.equals("4")|str2.equals("5")|
-                        str2.equals("6")|str2.equals("7")|str2.equals("8")|
-                        str2.equals("9")){}
+                if (str.charAt(i)=='0'|str.charAt(i)=='1'|str.charAt(i)=='2'|
+                        str.charAt(i)=='3'|str.charAt(i)=='4'|str.charAt(i)=='5'|
+                        str.charAt(i)=='6'|str.charAt(i)=='7'|str.charAt(i)=='8'|
+                        str.charAt(i)=='9'){}
                 else flag = true;
                 if (flag) break metka1;
             }
