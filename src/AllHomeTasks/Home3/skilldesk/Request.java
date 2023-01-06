@@ -8,20 +8,16 @@ public class Request {
         {
             Scanner scanner = new Scanner(System.in);
             System.out.println(str);
-            boolean isTrue = scanner.nextBoolean();
-            return isTrue;
+            return scanner.nextBoolean();
         }
 
         public static int intRequest(String str){
             Scanner scanner = new Scanner(System.in);
             System.out.println(str);
-            int number = scanner.nextInt();
-            return number;
+            return scanner.nextInt();
         }
 
         public static int intRandom(int min, int max){
-            double number = (Math.random() * ++max) + min;
-            return (int)number;
-
+            return (int)(Math.random() * ++max) + min;
         }
 }
