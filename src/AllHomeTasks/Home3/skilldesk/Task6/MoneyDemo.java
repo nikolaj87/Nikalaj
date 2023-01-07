@@ -12,7 +12,7 @@ class MoneyDemo {
 
     public static void main(String[] args){
         //запросим кол-во денег
-        int money = Request.intRequest("Введите сумму счета (int)");
+        int money = Request.intRequest("Введите сумму счета большую чем 0 (int)");
         //исспользуем 2 цикла while. 1й считает дни. 2й определяет делитель без остатка.
         System.out.println("необходимо " + Money.dayCounter(money) + " дней");
     }

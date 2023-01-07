@@ -17,7 +17,8 @@ public class LiftDemo {
         int stepDown = Request.intRequest("На сколько этажей лифт возвращается?\n" +
                 "Цифра дожна быть меньше предыдущей (int)");
         //передаем данные в цикл while
-        System.out.println("Лифт достигнет последнего этажа за " + Lift.numberOfLifts(flour, stepUp, stepDown)
+        System.out.println("Лифт достигнет последнего этажа за " +
+                Lift.numberOfLifts(flour, stepUp, stepDown)
         + " попыток!");
     }
 }
