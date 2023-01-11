@@ -5,7 +5,6 @@ class Money {
     static int dayCounter(int money) {
         int delitel;
         int counter = 0;
-
         while (money > 1) {
             delitel = money-1;
             while (money % delitel != 0) {
