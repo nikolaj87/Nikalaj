@@ -44,17 +44,19 @@ class MorskojBoj_version1_01 {
             String x1 = scaner2.nextLine();
             int x2 = Integer.parseInt(x1.charAt(0) + "");
             int y2 = Integer.parseInt(x1.charAt(1) + "");
-            myarray2[x2][y2] = "*";
-//проверяем ход
+            //проверяем ход
             fire++;
-            if (myarray[x2][y2] == 1) {
+            if (myarray[x2][y2] == 1 && myarray2[x2][y2].equals(".")) {
                 count ++;
                 myarray2[x2][y2] = "X";
                 if (count == 3) System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
                 else System.out.println("Корабль подбит!!! ");
+            } else if(myarray[x2][y2] == 1 && myarray2[x2][y2].equals("X")){
+                System.out.println("Не хитри! Такой ход уже был!!!!!");
+            }else {
+                System.out.println("мимо");
+                myarray2[x2][y2] = "*";
             }
-            else System.out.println("мимо");
-
         }
     }
 }
