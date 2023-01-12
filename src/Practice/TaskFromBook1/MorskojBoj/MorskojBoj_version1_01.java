@@ -14,6 +14,7 @@ class MorskojBoj_version1_01 {
         }
     }
     int count = 0;
+    int fire = 0;
         while (count<4){
 //----------------------------------------------------------------
             System.out.print("  ");                              //р
@@ -36,7 +37,7 @@ class MorskojBoj_version1_01 {
             }                                                    //ль!
 //если есть 3 попадания то прерываем цикл. Но мы дошли до этой точки чтоб распечатать резльтат
             if (count == 3) break;
-//поле готово начинаем битву
+//поле готово начинаем игру
             int[][] myarray = array;
             Scanner scaner2 = new Scanner(System.in);
             System.out.println("Делайте выстрел. На поле есть 3Х корабль. (например 00)");
@@ -45,13 +46,15 @@ class MorskojBoj_version1_01 {
             int y2 = Integer.parseInt(x1.charAt(1) + "");
             myarray2[x2][y2] = "*";
 //проверяем ход
+            fire++;
             if (myarray[x2][y2] == 1) {
                 count ++;
                 myarray2[x2][y2] = "X";
-                if (count == 3) System.out.println("ПОБЕДА!!!");
+                if (count == 3) System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
                 else System.out.println("Корабль подбит!!! ");
             }
             else System.out.println("мимо");
+
         }
     }
 }
