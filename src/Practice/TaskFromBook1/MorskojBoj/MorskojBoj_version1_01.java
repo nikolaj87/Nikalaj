@@ -3,6 +3,7 @@ package Practice.TaskFromBook1.MorskojBoj;
 import java.util.Scanner;
 
 class MorskojBoj_version1_01 {
+
     public void morskojBoj(int[][] array){
 //сделаем визуальную картинку из массива String. Второй массив нужен чтоб не выдавать корабли
 //инициализируем массив и все элементы массива
@@ -13,26 +14,29 @@ class MorskojBoj_version1_01 {
         }
     }
     int count = 0;
-        while (count<3){
-            System.out.print("  ");
-            for (int k = 0; k < myarray2.length; k++) {
-                 System.out.print(k + " ");
-            }
-            System.out.println();
-
-            for (int g = 0; g < myarray2.length; g++){
-                System.out.print((g) + " ");
-                for (int h = 0; h < myarray2[0].length; h++){
-                    if (myarray2[h][g].equals("*")){
-                    }else if(myarray2[h][g].equals("X")) {
-                    }else {
-                        myarray2[h][g] = ".";
-                    }
-                    System.out.print(myarray2[h][g]+" ");
-                }
-                System.out.println();
-            }
-// поле готово начинаем битву
+        while (count<4){
+//----------------------------------------------------------------
+            System.out.print("  ");                              //р
+            for (int k = 0; k < myarray2.length; k++) {          //а
+                 System.out.print(k + " ");                      //с
+            }                                                    //п
+            System.out.println();                                //е
+                                                                 //ч
+            for (int g = 0; g < myarray2.length; g++){           //а
+                System.out.print((g) + " ");                     //т
+                for (int h = 0; h < myarray2[0].length; h++){    //а
+                    if (myarray2[h][g].equals("*")){             //е
+                    }else if(myarray2[h][g].equals("X")) {       //м
+                    }else {                                      //в
+                        myarray2[h][g] = ".";                    //к
+                    }                                            //о
+                    System.out.print(myarray2[h][g]+" ");        //н
+                }                                                //с
+                System.out.println();                            //о
+            }                                                    //ль!
+//если есть 3 попадания то прерываем цикл. Но мы дошли до этой точки чтоб распечатать резльтат
+            if (count == 3) break;
+//поле готово начинаем битву
             int[][] myarray = array;
             Scanner scaner2 = new Scanner(System.in);
             System.out.println("Делайте выстрел. На поле есть 3Х корабль. (например 00)");
@@ -49,27 +53,5 @@ class MorskojBoj_version1_01 {
             }
             else System.out.println("мимо");
         }
-//игра окончена! Распечатаем результат
-        System.out.print("  ");
-        for (int k = 0; k < myarray2.length; k++) {
-            System.out.print(k + " ");
-        }
-        System.out.println();
-
-        for (int g = 0; g < myarray2.length; g++){
-            System.out.print((g) + " ");
-            for (int h = 0; h < myarray2[0].length; h++){
-                if (myarray2[h][g].equals("*")){
-                }else if(myarray2[h][g].equals("X")) {
-                }else {
-                    myarray2[h][g] = ".";
-                }
-                System.out.print(myarray2[h][g]+" ");
-            }
-            System.out.println();
-        }
-
-
-
     }
 }
