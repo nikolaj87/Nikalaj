@@ -7,31 +7,32 @@ class MorskojBoj_version1_01 {
 //сделаем визуальную картинку из массива String. Второй массив нужен чтоб не выдавать корабли
 //инициализируем массив и все элементы массива
     String[][] myarray2 = new String[array.length][array.length];
-        for (int i = 0; i < myarray2.length; i++){
-            for (int j = 0; j < myarray2[0].length; j++){
+    for (int i = 0; i < myarray2.length; i++){
+        for (int j = 0; j < myarray2[0].length; j++){
                 myarray2[i][j] = ".";
-            }
         }
+    }
     int count = 0;
-    while (count<3){
-        System.out.print("  ");
+        while (count<3){
+            System.out.print("  ");
             for (int k = 0; k < myarray2.length; k++) {
                  System.out.print(k + " ");
             }
             System.out.println();
-                for (int g = 0; g < myarray2.length; g++){
-                    System.out.print((g) + " ");
-                        for (int h = 0; h < myarray2[0].length; h++){
-                            if (myarray2[h][g].equals("*")){
-                            }else if(myarray2[h][g].equals("X")) {
-                            }else {
-                                myarray2[h][g] = ".";
-                            }
-                            System.out.print(myarray2[h][g]+" ");
-                        }
-                    System.out.println();
-                }
 
+            for (int g = 0; g < myarray2.length; g++){
+                System.out.print((g) + " ");
+                for (int h = 0; h < myarray2[0].length; h++){
+                    if (myarray2[h][g].equals("*")){
+                    }else if(myarray2[h][g].equals("X")) {
+                    }else {
+                        myarray2[h][g] = ".";
+                    }
+                    System.out.print(myarray2[h][g]+" ");
+                }
+                System.out.println();
+            }
+// полеготово начинаем битву
     int[][] myarray = array;
     Scanner scaner2 = new Scanner(System.in);
     System.out.println("Делайте выстрел. На поле есть корабль. (например 00)");
