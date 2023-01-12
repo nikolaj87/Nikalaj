@@ -1,8 +1,6 @@
 package Practice.TaskFromBook1.MorskojBoj;
 
-import java.util.Arrays;
-
-public class BojDemo {
+class MorskojBojDemo {
     public static void main(String[] args) {
 
         int x = RequestParameters.gameSize("Введите размер поля");
@@ -10,7 +8,7 @@ public class BojDemo {
         SetShip set1 = new SetShip();
         int [][] array1 =  set1.create(x);
         //начинаем игру
-        Boj boy1 = new Boj();
+        MorskojBoj_version1_01 boy1 = new MorskojBoj_version1_01();
         boy1.morskojBoj(array1);
     }
 }

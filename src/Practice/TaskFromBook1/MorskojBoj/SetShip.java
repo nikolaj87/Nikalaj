@@ -2,7 +2,7 @@ package Practice.TaskFromBook1.MorskojBoj;
 
 import java.util.Random;
 
-public class SetShip {
+class SetShip {
     public int[][] create(int size){
         //мы получили размер квадратного игрового поля size и поставим на него корабль из трех точек
         //рандомно определим будет ли корабль вертикальным. И рандомно разместим его на поле
@@ -21,12 +21,6 @@ public class SetShip {
             gamePole[y+1][x] = 1;
             gamePole[y+2][x] = 1;
         }
-//                //распечатаем результат
-//        for (int j = 0; j < size; j++) {
-//            for (int i = 0; i < size; i++) {
-//                System.out.print(gamePole[j][i] + " ");
-//            }
-//            System.out.println();}
         return gamePole;
     }
     }

@@ -2,8 +2,8 @@ package Practice.TaskFromBook1.MorskojBoj;
 
 import java.util.Scanner;
 
-public class Boj {
-public void morskojBoj(int[][] array){
+class MorskojBoj_version1_01 {
+    public void morskojBoj(int[][] array){
 //сделаем визуальную картинку из массива String. Второй массив нужен чтоб не выдавать корабли
 //инициализируем массив и все элементы массива
     String[][] myarray2 = new String[array.length][array.length];
