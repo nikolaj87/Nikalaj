@@ -35,7 +35,7 @@ class MorskojBoj_version1_01 {
 // поле готово начинаем битву
     int[][] myarray = array;
     Scanner scaner2 = new Scanner(System.in);
-    System.out.println("Делайте выстрел. На поле есть корабль. (например 00)");
+    System.out.println("Делайте выстрел. На поле есть 3Х корабль. (например 00)");
     String x1 = scaner2.nextLine();
     int x2 = Integer.parseInt(x1.charAt(0) + "");
     int y2 = Integer.parseInt(x1.charAt(1) + "");
@@ -46,7 +46,7 @@ class MorskojBoj_version1_01 {
             count ++;
             myarray2[x2][y2] = "X";
             if (count == 3) System.out.println("ПОБЕДА!!!");
-            else System.out.println("ранен");
+            else System.out.println("Корабль подбит!!! ");
         }
         else System.out.println("мимо");
         }
