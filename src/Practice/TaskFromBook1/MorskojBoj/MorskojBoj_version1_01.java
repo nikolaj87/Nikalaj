@@ -32,7 +32,7 @@ class MorskojBoj_version1_01 {
                 }
                 System.out.println();
             }
-// полеготово начинаем битву
+// поле готово начинаем битву
     int[][] myarray = array;
     Scanner scaner2 = new Scanner(System.in);
     System.out.println("Делайте выстрел. На поле есть корабль. (например 00)");
