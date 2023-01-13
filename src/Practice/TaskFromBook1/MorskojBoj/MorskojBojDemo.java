@@ -1,14 +1,29 @@
 package Practice.TaskFromBook1.MorskojBoj;
 
+import java.util.Arrays;
+
 class MorskojBojDemo {
     public static void main(String[] args) {
 
-        int x = RequestParameters.gameSize("Введите размер поля(от 3 до 10)");
+        int size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 9)");
         //заполним игровое поле кораблями
-        SetShip set1 = new SetShip();
-        int [][] array1 =  set1.create(x);
+        GameBoard game1 = new GameBoard();
+        game1.size = size;
+
+        game1.createField();
+        game1.setShip(2);
         //начинаем игру
-        MorskojBoj_version1_01 boy1 = new MorskojBoj_version1_01();
-        boy1.morskojBoj(array1);
+        MorskojBoj_1_02 boj = new MorskojBoj_1_02();
+        boj.size = size;
+        boj.gameBoardInt = game1.boardReturner();
+//        System.out.println(Arrays.deepToString(boj.gameBoardInt));
+
+        boj.gameBoardStrCreator();
+//        System.out.println(Arrays.deepToString(boj.gameBoardStr));
+//        System.out.println(boj.size);
+        boj.game();
+//        MorskojBoj_version1_01 boy1 = new MorskojBoj_version1_01();
+//        boy1.morskojBoj(game1.gameBoard);
+
     }
 }
