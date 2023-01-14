@@ -16,7 +16,7 @@ class MorskojBoj_1_02 {
         }
     }
 
-    void firstBoardPrint(int size){
+    void firstBoardPrint(int size){        //метод распечатывает первый экран
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 gameBoardStr[i][j] = "\u00B7"+" ";
@@ -26,7 +26,7 @@ class MorskojBoj_1_02 {
         }
     }
 
-    void game(){               //метод - ира пользователя
+    void game(){               //метод - игра с пользователем
         int count = 0;
         int fire = 0;
         while (count<shotToWin+1){
@@ -52,7 +52,7 @@ class MorskojBoj_1_02 {
         }
     }
 
-    void printToConsole() {       //печатаем поле в консоль
+    void printToConsole() {       //метод печатаем поле в консоль
         char mychar = 'a';
         System.out.print("    ");
         for (int k = 0; k < gameBoardStr.length; k++) {
