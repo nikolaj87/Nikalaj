@@ -16,6 +16,16 @@ class MorskojBoj_1_02 {
         }
     }
 
+    void firstBoardPrint(int size){
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                gameBoardStr[i][j] = "\u00B7"+" ";
+                System.out.print(gameBoardStr[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
     void game(){               //метод - ира пользователя
         int count = 0;
         int fire = 0;

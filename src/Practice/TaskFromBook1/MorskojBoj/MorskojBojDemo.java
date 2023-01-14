@@ -8,16 +8,14 @@ class MorskojBojDemo {
         MorskojBoj_1_02 boj = new MorskojBoj_1_02();
 
         int size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 9)");
-        //заполним игровое поле кораблями
-
-        boj.shotToWin = 3;
+        boj.shotToWin = 3; //
+        boj.size = size;
         boj.gameBoardStrCreator();
+        boj.firstBoardPrint(size);
 
         polozenieKorablia.size = size;
-
         polozenieKorablia.createField();
         polozenieKorablia.setShip(2);
-        boj.printToConsole();
 
         while(true) {
             boolean newShip = RequestParameters.isAddShip("На поле уже есть корабль! Поставить еще один? Y/N");
@@ -25,15 +23,12 @@ class MorskojBojDemo {
             if(polozenieKorablia.setAnotherShip(2)) {
                 boj.shotToWin = boj.shotToWin + 3;
             }
-
         }
 
-        //polozenieKorablia.print();
-
         //начинаем игру
-        boj.size = size;
         boj.gameBoardInt = polozenieKorablia.boardReturner();
         boj.gameBoardStrCreator();
+
         boj.game();
     }
 }
