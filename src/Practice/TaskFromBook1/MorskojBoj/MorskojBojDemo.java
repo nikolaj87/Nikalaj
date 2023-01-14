@@ -4,26 +4,36 @@ import java.util.Arrays;
 
 class MorskojBojDemo {
     public static void main(String[] args) {
+        GameBoard polozenieKorablia = new GameBoard();
+        MorskojBoj_1_02 boj = new MorskojBoj_1_02();
 
         int size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 9)");
         //заполним игровое поле кораблями
-        GameBoard game1 = new GameBoard();
-        game1.size = size;
 
-        game1.createField();
-        game1.setShip(2);
-        //начинаем игру
-        MorskojBoj_1_02 boj = new MorskojBoj_1_02();
-        boj.size = size;
-        boj.gameBoardInt = game1.boardReturner();
-//        System.out.println(Arrays.deepToString(boj.gameBoardInt));
-
+        boj.shotToWin = 3;
         boj.gameBoardStrCreator();
-//        System.out.println(Arrays.deepToString(boj.gameBoardStr));
-//        System.out.println(boj.size);
-        boj.game();
-//        MorskojBoj_version1_01 boy1 = new MorskojBoj_version1_01();
-//        boy1.morskojBoj(game1.gameBoard);
 
+        polozenieKorablia.size = size;
+
+        polozenieKorablia.createField();
+        polozenieKorablia.setShip(2);
+        boj.printToConsole();
+
+        while(true) {
+            boolean newShip = RequestParameters.isAddShip("На поле уже есть корабль! Поставить еще один? Y/N");
+            if (!newShip) break;
+            if(polozenieKorablia.setAnotherShip(2)) {
+                boj.shotToWin = boj.shotToWin + 3;
+            }
+
+        }
+
+        //polozenieKorablia.print();
+
+        //начинаем игру
+        boj.size = size;
+        boj.gameBoardInt = polozenieKorablia.boardReturner();
+        boj.gameBoardStrCreator();
+        boj.game();
     }
 }
