@@ -36,47 +36,24 @@ class GameBoard {
             flag = false;
             x = (int) (Math.random() * size);
             y = (int) (Math.random() * (size - 2));
-
-            Random isShipVertical = new Random();
-            if (isShipVertical.nextBoolean()) {//размещаем наш случайный ВЕРТИКАЛЬНЫЙ корабль
 //пишем гибкий цикл фор который будет откидывать значения выходящие за массив
-                for (int x1 = x - 1; x1 < x + 2; x1++) {
-                    if (x1 < 0) x1 = 0;
-                    if (x1 == size) break;
-                    for (int y1 = y - 1; y1 < y + 4; y1++) {
-                        if (y1 < 0) y1 = 0;
-                        if (y1 > size - 1) break;
-                        if (gameBoard[y1][x1] == 1) {
-                            flag = true;
-                        }
-                    }
-                }
-            }else{ //пытаемся раместить случайны горизонтальный корабль
-                for (int x1 = x - 1; x1 < x + 2; x1++) {
-                    if (x1 < 0) x1 = 0;
-                    if (x1 == size) break;
-                    for (int y1 = y - 1; y1 < y + 4; y1++) {
-                        if (y1 < 0) y1 = 0;
-                        if (y1 > size - 1) break;
-                        if (gameBoard[y1][x1] == 1) {
-                            flag = true;
-                        }
+            for (int x1 = x - 1; x1 < x + 2; x1++) {
+                if (x1 < 0) x1 = 0;
+                if (x1 == size) break;
+                for (int y1 = y - 1; y1 < y + 4; y1++) {
+                    if (y1 < 0) y1 = 0;
+                    if (y1 > size - 1) break;
+                    if (gameBoard[y1][x1] == 1) {
+                        flag = true;
                     }
                 }
             }
-
-            //если мы вышли из цикла и флаг опущен значит метод отработал успешно
-            if (!flag) break;
-        }
-
-
-// если вышли из цикла и флаг поднят значит корабль не установлен за 100 попыток
-        if (flag) {
-            System.out.println("не удалось поставить корабль");
-        } else {
-            gameBoard[y][x] = 1;
-            gameBoard[y + 1][x] = 1;
-            gameBoard[y + 2][x] = 1;
+            if (!flag) {
+                gameBoard[y][x] = 1;
+                gameBoard[y + 1][x] = 1;
+                gameBoard[y + 2][x] = 1;
+                break;
+            }
         }
         return !flag;
     }
@@ -93,10 +70,6 @@ class GameBoard {
             System.out.println();
         }
 
-    }
-
-    public int getSize() {
-        return size;
     }
 }
 

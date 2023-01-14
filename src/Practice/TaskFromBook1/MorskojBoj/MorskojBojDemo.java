@@ -22,7 +22,8 @@ class MorskojBojDemo {
             if (!newShip) break;
             if(polozenieKorablia.setAnotherShip(2)) {
                 boj.shotToWin = boj.shotToWin + 3;
-            }
+                System.out.println("корабль № " + boj.shotToWin/3 + " успешно размешен");
+            }else System.out.println("не получилось разместить корабль");
         }
 
         polozenieKorablia.print();
