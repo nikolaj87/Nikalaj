@@ -25,6 +25,8 @@ class MorskojBojDemo {
             }
         }
 
+        polozenieKorablia.print();
+
         //начинаем игру
         boj.gameBoardInt = polozenieKorablia.boardReturner();
         boj.gameBoardStrCreator();
