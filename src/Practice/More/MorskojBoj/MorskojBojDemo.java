@@ -1,6 +1,4 @@
-package Practice.TaskFromBook1.MorskojBoj;
-
-import java.util.Arrays;
+package Practice.More.MorskojBoj;
 
 class MorskojBojDemo {
     public static void main(String[] args) {

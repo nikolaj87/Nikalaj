@@ -1,4 +1,4 @@
-package Practice.TaskFromBook1.MorskojBoj;
+package Practice.More.MorskojBoj;
 
 import java.util.Scanner;
 
