@@ -12,6 +12,7 @@ int size=5;
         y= x-y;
         x = x-y;
 
+            System.out.println("\uD83D\uDD25");
         System.out.println(y+ " "+ x);
             }
         }
