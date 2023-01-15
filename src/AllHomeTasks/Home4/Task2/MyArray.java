@@ -27,8 +27,7 @@ class MyArray {
             if (myArray[i]<myArray[i+1])
                 counter++;
             }
-        if (counter == size-1) return true;
-        else return false;
+        return counter == size - 1;
     }
 
     @Override
