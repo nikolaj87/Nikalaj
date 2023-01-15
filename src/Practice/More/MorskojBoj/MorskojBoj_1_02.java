@@ -34,7 +34,7 @@ class MorskojBoj_1_02 {
             if (count == shotToWin) break;
             String x1 = RequestParameters.parameterRequestStr("Делайте ход № " + (fire+1) + " Еще есть вражеские корабли(ль) " +
                     "(например 1A)", size);
-            System.out.println(x1);
+            //System.out.println(x1);
             int y2 = (x1.charAt(1)-97);
             int x2 = Integer.parseInt(x1.charAt(0) + "")-1;
             fire++;
