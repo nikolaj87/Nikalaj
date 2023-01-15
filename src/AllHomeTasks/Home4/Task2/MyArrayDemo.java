@@ -2,8 +2,7 @@ package AllHomeTasks.Home4.Task2;
 
 public class MyArrayDemo {
     public static void main(String[] args) {
-        MyArray array1 = new MyArray();
-        array1.size = 5;
+        MyArray array1 = new MyArray(5);
         array1.arrayCreator();
         System.out.println(array1.toString());
 

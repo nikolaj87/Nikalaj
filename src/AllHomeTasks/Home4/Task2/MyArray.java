@@ -36,4 +36,8 @@ class MyArray {
                 "myArray=" + Arrays.toString(myArray) +
                 '}';
     }
+    public MyArray(int size) {
+        this.size = size;
+    }
 }
+
