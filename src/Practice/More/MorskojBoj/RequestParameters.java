@@ -59,24 +59,23 @@ class RequestParameters {
     }
 
     static boolean isAddShip (String message){ //метод спрашивает Y/N и примет только корректный ввод
-        boolean yesOrNo = false;
-        boolean flag = true;
+        boolean flag;
         String str="";
-        while(flag) {
+        while(true) {
             System.out.println(message);
             Scanner scanner = new Scanner(System.in);
             str = scanner.nextLine();
             str = str.toLowerCase();              //на всякий случай к нижнему регистру
             if (str.equals("y")) {
-                yesOrNo = true;
-                flag = false;
-            } else if (str.equals("n")) {
-                yesOrNo = false;
-                flag = false;
-            } else
                 flag = true;
+                break;
+            } else if (str.equals("n")) {
+                flag = false;
+                break;
+            }
+
         }
-        return yesOrNo;
+        return flag;
     }
 
 }
