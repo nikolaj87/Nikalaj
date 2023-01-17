@@ -30,7 +30,7 @@ class MorskojBoj_1_03 {
             } else if(gameBoardStr[x][y].equals(symbol_ataked)){
                 System.out.println("Не хитри! Такой ход уже был!!!!!");
             }else {
-                System.out.println("мимо");
+                System.out.println(Messanger.messageReturner());
                 gameBoardStr[x][y] = symbol_empty;
             }
         }
