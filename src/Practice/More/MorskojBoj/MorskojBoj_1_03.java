@@ -63,6 +63,9 @@ class MorskojBoj_1_03 {
         this.size = size;
     }
 
+    MorskojBoj_1_03() {
+    }
+
     void print(){                               //распечатать поле для тестировки и отладки
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {

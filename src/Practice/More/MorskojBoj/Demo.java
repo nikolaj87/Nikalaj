@@ -18,8 +18,9 @@ public class Demo {
         GameBoard board = new GameBoard();
 
         board.createBoardStr();      //обьявление массива
-        board.print();               //отладка
+
         board.setShip();             //установка корабля по умолчанию
+//        board.print();               //отладка
         board.setAnotherShip();      //добавление корабля
 //        board.print();             //печать для отладки
         boj.gameBoardStr=board.readyGameBoardReturner();  //передаю массив для игры

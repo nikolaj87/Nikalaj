@@ -53,6 +53,7 @@ class RequestParameters {
                     mychar++;  //char приростает. Это для универсальности поля
                 }
             }
+            if (flag||flag1)System.out.println("ошибка ввода с клавиатуры");
         }
         return str;     //возвращаем проверенную строку в формате 1a
     }
@@ -72,7 +73,7 @@ class RequestParameters {
                 flag = false;
                 break;
             }
-
+            System.out.println("ошибка ввода с клавиатуры");
         }
         return flag;
     }
