@@ -11,13 +11,13 @@ class RequestParameters {
             System.out.println(message);
             Scanner scanner = new Scanner(System.in);
             size = scanner.nextLine();
-            for (int i = 3; i <11 ; i++) {
+            for (int i = 3; i <10 ; i++) {
                 test = i + "";
                 if (size.equals(test)){           //только цифра 3-9 пройдет проверку
                     flag = false;
                 }
             }
-            System.out.println("ошибка ввода с клавиатуры");
+            if(flag)System.out.println("ошибка ввода с клавиатуры");
         }
         return Integer.parseInt(size);          //возвращаю размер игры в интежер
     }
