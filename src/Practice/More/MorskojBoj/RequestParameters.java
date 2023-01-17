@@ -11,12 +11,13 @@ class RequestParameters {
             System.out.println(message);
             Scanner scanner = new Scanner(System.in);
             size = scanner.nextLine();
-            for (int i = 3; i <10 ; i++) {
+            for (int i = 3; i <11 ; i++) {
                 test = i + "";
                 if (size.equals(test)){           //только цифра 3-9 пройдет проверку
                     flag = false;
                 }
             }
+            System.out.println("ошибка ввода с клавиатуры");
         }
         return Integer.parseInt(size);          //возвращаю размер игры в интежер
     }
@@ -49,8 +50,6 @@ class RequestParameters {
                     if (mychar2.equals(myI)) {    //только цифра пройдет проверку
                         flag1 = false;            //опускаем флаг при успехе
                     }
-//                    System.out.println("проход" + i + " чар" + mychar + " " + mychar1 +
-//                            " " + mychar + " " + flag + flag1);
                     mychar++;  //char приростает. Это для универсальности поля
                 }
             }

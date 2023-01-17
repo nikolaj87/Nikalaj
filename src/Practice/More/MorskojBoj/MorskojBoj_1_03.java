@@ -45,7 +45,8 @@ class MorskojBoj_1_03 {
         }
         System.out.println();
         for (int i = 0; i < gameBoardStr.length; i++) {
-            System.out.print((i + 1) + " | ");
+            if (i>=9){System.out.print((i + 1) + "| ");}
+            else{System.out.print((i + 1) + " | ");}
             for (int j = 0; j < gameBoardStr[0].length; j++) {
                 if (gameBoardStr[i][j].equals("x")) {
                     System.out.print(symbol_start + " ");

@@ -13,7 +13,7 @@ package Practice.More.MorskojBoj;
 public class Demo {
     public static void main(String[] args) {
 
-        int size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 9)");
+        int size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 10)");
         MorskojBoj_1_03 boj = new MorskojBoj_1_03(size);
         GameBoard board = new GameBoard();
 
