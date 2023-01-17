@@ -1,7 +1,6 @@
-import java.util.Arrays;
-import java.util.Scanner;
+package Practice;
 
-public class JavaTest {
+public class EqualsStringsArrays {
     public static void main(String[] args) {
 
         String[] array = new String[5];
