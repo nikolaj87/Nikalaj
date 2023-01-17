@@ -26,7 +26,7 @@ class MorskojBoj_1_03 {
                 count ++;
                 gameBoardStr[x][y] = symbol_ataked;
                 if (count == shotToWin) System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
-                else System.out.println("Корабль подбит!!! ");
+                else System.out.println(Messanger.messageReturnerGoal());
             } else if(gameBoardStr[x][y].equals(symbol_ataked)){
                 System.out.println(Messanger.messageReturnerAgain());
             }else {
@@ -58,7 +58,7 @@ class MorskojBoj_1_03 {
         }
     }
 
-    public MorskojBoj_1_03(int size) {
+    MorskojBoj_1_03(int size) {
         this.size = size;
     }
 

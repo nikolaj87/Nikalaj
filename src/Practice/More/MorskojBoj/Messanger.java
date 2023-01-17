@@ -19,4 +19,13 @@ class Messanger {
         return messageArray[(int)(Math.random()*(messageArray.length))];
     }
 
+    static String messageReturnerGoal() {
+        String[] messageArray = new String[4];
+        messageArray[0] = "В яблочко!!!";
+        messageArray[1] = "точное попадание";
+        messageArray[2] = "корабль подбит, продолжай";
+        messageArray[3] = "точно в цель";
+        return messageArray[(int)(Math.random()*(messageArray.length))];
+    }
+
 }
