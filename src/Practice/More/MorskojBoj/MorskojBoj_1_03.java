@@ -28,9 +28,9 @@ class MorskojBoj_1_03 {
                 if (count == shotToWin) System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
                 else System.out.println("Корабль подбит!!! ");
             } else if(gameBoardStr[x][y].equals(symbol_ataked)){
-                System.out.println("Не хитри! Такой ход уже был!!!!!");
+                System.out.println(Messanger.messageReturnerAgain());
             }else {
-                System.out.println(Messanger.messageReturner());
+                System.out.println(Messanger.messageReturnerMimo());
                 gameBoardStr[x][y] = symbol_empty;
             }
         }
