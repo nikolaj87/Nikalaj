@@ -1,4 +1,9 @@
 import java.util.Scanner;
 
-public class Java {}
+public class Java {
+
+
+
+
+}
 

@@ -67,17 +67,17 @@ class GameBoard extends MorskojBoj_1_03 {
     }
 
     void setAddShip(int x, int y, int isVertical) {
+        int size = 3;
         if (isVertical == 0) {
-            gameBoardStr[y][x] = "x";       //процесс размещения
-            gameBoardStr[y + 1][x] = "x";   //процесс размещения
-            gameBoardStr[y + 2][x] = "x";   //роцесс размещения
-        }else{
-            gameBoardStr[y][x] = "x";       //размещение горизонтально
-            gameBoardStr[y][x + 1] = "x";   //размещение горизонтально
-            gameBoardStr[y][x + 2] = "x";   //размещение горизонтально
+            for (int i = 0; i < size; i++) {
+                gameBoardStr[y + i][x] = "x";
+            }
+        } else {
+            for (int i = 0; i < size; i++) {
+                gameBoardStr[y][x + i] = "x";
+            }
         }
     }
-
 
     boolean gameBoardAnalyser(int x, int y, int isVertical){ //метод гибко проверяет координаты x y массива не
         boolean flag = true;                                 //вылетая за его пределы
