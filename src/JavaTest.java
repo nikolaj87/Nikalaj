@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class JavaTest {
     public static void main(String[] args) {
-
+        System.out.println("\u06F5");
         String[] array = new String[5];
         array[0] = "bibic";
         String[] array2 = new String[4];

@@ -4,8 +4,46 @@ import java.util.Scanner;
 
 class RequestParameters {
 
+
+    static int chooseGame (){ //метод запрашивает во что играем. Примет 1-2-3
+        String str="";
+        while (true) {
+            System.out.println("Приветствую в консольной игре морской бой." +
+                    " Вы скажете: \"Этих морских боев уже море зачем нам еще один?\" \n" +
+                    "Все просто - отвечу я. Важен не рузультат а процесс.\n" +
+                    "Итак выберите игру\n\n" +
+                    "1. Игра с компьютером\n" +
+                    "2. Игра с собой 10х10 стандартный Set кораблей\n" +
+                    "3. Игра с собой. Я сам настрою поле.");
+            Scanner scanner = new Scanner(System.in);
+            str = scanner.nextLine();
+            str = str.toLowerCase();       //на всякий случай к нижнему регистру
+            if(str.equals("1") || str.equals("2")|| str.equals("3")){
+                return Integer.parseInt(str);
+            } else
+                System.out.println("ошибка ввода");
+        }
+    }
+
+
+    static Boolean isPlayVsPc(){ //метод примет Y N вернет true false
+        String str="";
+        while(true) {
+            System.out.println("Играем против компьютера? Y Или сам с собой? N");
+            Scanner scanner = new Scanner(System.in);
+            str = scanner.nextLine();
+            str = str.toLowerCase();
+            if (str.equals("y")) {
+                return true;
+            } else if (str.equals("n")) {
+                return false;
+            } else {
+                System.out.println("ошибка ввода с клавиатуры");
+            }
+        }
+    }
+
     static boolean isStandartGame (){ //метод примет только Y N
-        boolean flag;
         String str="";
         while(true) {
             System.out.println("поставить стандартный набор кораблей?(Y) " +

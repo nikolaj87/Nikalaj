@@ -5,6 +5,7 @@ public class SeaFightVsCympyter {
     String[][] userArray;
     String[][] pcArray;
 
+
     void myShipPozition(){
         //метод строит поле для юзера по его координатам. Но как это сделать наглядно и юзерфрендли?
     }

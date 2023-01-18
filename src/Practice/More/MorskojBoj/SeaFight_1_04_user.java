@@ -2,13 +2,14 @@ package Practice.More.MorskojBoj;
 
 class SeaFight_1_04_user {
 
-    int size;
+    public int size;
     String[][]gameBoardStr = new String[size][size];
 
     static int shotToWin = 0;
     static String symbol_start = "\u00B7";
     static String symbol_empty = "*";
     static String symbol_ataked = "\u25A0";
+    static String symbol_destroyed = "";
 
     void game(){               //метод - игра с пользователем
         int count = 0;
@@ -23,14 +24,19 @@ class SeaFight_1_04_user {
             int x = Integer.parseInt(userAtak.charAt(0) + "");
 
             fire++;
-            if (gameBoardStr[x][y].equals("x")) {
-                count ++;
+            if (gameBoardStr[x][y].equals("x")) {      //если юзер угадал координату надо проверить это убитый корабль
+                count++;                               //или только попадание
+                //проанализоровать убит ли корабль
                 gameBoardStr[x][y] = symbol_ataked;
-                if (count == shotToWin) System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
-                else System.out.println(Messanger.messageReturnerGoal());
+                if (count == shotToWin) {
+                    System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
+                } else {
+                    System.out.println(Messanger.messageReturnerGoal());
+                }
+
             } else if(gameBoardStr[x][y].equals(symbol_ataked)){
                 System.out.println(Messanger.messageReturnerAgain());
-            }else {
+            } else {
                 System.out.println(Messanger.messageReturnerMimo());
                 gameBoardStr[x][y] = symbol_empty;
             }

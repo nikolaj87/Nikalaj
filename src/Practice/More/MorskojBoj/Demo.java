@@ -14,26 +14,30 @@ public class Demo {
     public static void main(String[] args) {
 
         int size;
-        if(RequestParameters.isStandartGame()) {
-            size = 10;
-            SeaFight_1_04_user boj = new SeaFight_1_04_user(size);
-            GameBoard board = new GameBoard(size);
-            board.createBoardStr();
-            board.setStandartBoard();
-//            board.print();
-            boj.gameBoardStr=board.readyGameBoardReturner();  //передаю массив для игры
-            boj.game();                  //начало игры
 
-        } else {
-            size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 10)");
-            SeaFight_1_04_user boj = new SeaFight_1_04_user(size);
-            GameBoard board = new GameBoard(size);
-            board.createBoardStr();
-//            board.print();
-            board.setMoreShips();
-            board.print();
-            boj.gameBoardStr=board.readyGameBoardReturner();  //передаю массив для игры
-            boj.game();                  //начало игры
+        switch (RequestParameters.chooseGame()) {
+            case (1) -> System.out.println("игра против PC еще не реализована");
+            case (2) -> {
+                size = 10;
+                SeaFight_1_04_user boj = new SeaFight_1_04_user(size);
+                GameBoard board = new GameBoard(size);
+                board.createBoardStr();
+                board.setStandartBoard();
+//                board.print();
+                boj.gameBoardStr = board.readyGameBoardReturner();
+                boj.game();
+            }
+            case (3) -> {
+                size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 10)");
+                SeaFight_1_04_user boj = new SeaFight_1_04_user(size);
+                GameBoard board = new GameBoard(size);
+                board.createBoardStr();
+                board.print();
+                board.setMoreShips();
+//                board.print();
+                boj.gameBoardStr = board.readyGameBoardReturner();
+                boj.game();
+            }
+        }
         }
     }
-}
