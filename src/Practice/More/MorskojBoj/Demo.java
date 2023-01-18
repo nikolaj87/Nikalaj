@@ -10,13 +10,37 @@ package Practice.More.MorskojBoj;
 
 //напоминания: нету
 
+import java.util.Arrays;
+
 public class Demo {
     public static void main(String[] args) {
 
         int size;
 
         switch (RequestParameters.chooseGame()) {
-            case (1) -> System.out.println("игра против PC еще не реализована");
+            case (1) -> {
+                System.out.println("игра против PC еще не реализована");
+                size = 10;
+                SeaFight_1_04_user boj = new SeaFight_1_04_user(size);
+                GameBoard board = new GameBoard(size);
+                SeaFightVsCympyter draka = new SeaFightVsCympyter();
+
+                board.createBoardStr();
+                board.setStandartBoard();
+                draka.pcArray = board.readyGameBoardReturner();
+                System.out.println(Arrays.deepToString(draka.pcArray));
+
+
+//                draka.printArr(board.readyGameBoardReturner());
+                draka.userArrayCreate();
+
+//                board.createBoardStr();
+//                board.setStandartBoard();
+//                draka.userArray = board.readyGameBoardReturner();
+
+
+            }
+
             case (2) -> {
                 size = 10;
                 SeaFight_1_04_user boj = new SeaFight_1_04_user(size);
