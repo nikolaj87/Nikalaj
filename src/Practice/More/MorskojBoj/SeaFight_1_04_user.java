@@ -8,8 +8,8 @@ class SeaFight_1_04_user {
     static int shotToWin = 0;
     static String symbol_start = "\u00B7";
     static String symbol_empty = "*";
-    static String symbol_ataked = "\u25A0";
-    static String symbol_destroyed = "";
+    static String symbol_ataked = "X";
+    static String symbol_destroyed = "\u25A0";
 
     void game(){               //метод - игра с пользователем
         int count = 0;
@@ -20,25 +20,30 @@ class SeaFight_1_04_user {
             //получаем координаты выстрела x y
             String userAtak = RequestParameters.requestFire("Делайте ход № " + (fire+1) + " Еще есть вражеские корабли(ль) " +
                     "(например 0A)", size);
-            int y = (userAtak.charAt(1)-97);
-            int x = Integer.parseInt(userAtak.charAt(0) + "");
+            int x = (userAtak.charAt(1)-97);
+            int y = Integer.parseInt(userAtak.charAt(0) + "");
 
             fire++;
-            if (gameBoardStr[x][y].equals("x")) {      //если юзер угадал координату надо проверить это убитый корабль
-                count++;                               //или только попадание
-                //проанализоровать убит ли корабль
-                gameBoardStr[x][y] = symbol_ataked;
-                if (count == shotToWin) {
-                    System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
-                } else {
+            if (gameBoardStr[y][x].equals("x")) {      //если юзер угадал координату надо проверить это убитый корабль
+                count++;
+                gameBoardStr[y][x] = "temp";
+                if(gameBoardAnalyser(x, y)){
+                    gameBoardStr[y][x] = symbol_ataked;
                     System.out.println(Messanger.messageReturnerGoal());
+                } else {
+                    gameBoardStr[y][x] = symbol_destroyed;
+                    System.out.println("КОРАБЛЬ УНИЧТОЖЕН!!!");
                 }
 
-            } else if(gameBoardStr[x][y].equals(symbol_ataked)){
+                if (count == shotToWin) {
+                    System.out.println("ПОБЕДА!!! За " + fire + " хода(ов)!");
+                }
+
+            } else if(gameBoardStr[y][x].equals(symbol_ataked) || gameBoardStr[y][x].equals(symbol_destroyed)){
                 System.out.println(Messanger.messageReturnerAgain());
             } else {
                 System.out.println(Messanger.messageReturnerMimo());
-                gameBoardStr[x][y] = symbol_empty;
+                gameBoardStr[y][x] = symbol_empty;
             }
         }
     }
@@ -78,4 +83,22 @@ class SeaFight_1_04_user {
             System.out.println();
         }
     }
+
+    boolean gameBoardAnalyser(int x, int y) { //метод гибко проверяет координаты x y
+        boolean flag = false;                                               //массива невылетая за его пределы
+        for (int i = x - 1; i < x + 2; i++) {   //цикл проверит можно ли еще поставить корабль
+            if (i < 0) i = 0;                                //если корабль в левом столбце то срежем -1 элемент цикла
+            if (i == size) break;                            //если корабль в правом столбце то срежем size+1 элемент
+            for (int j = y - 1; j < y + 2; j++) { //вложенный цикл для второй координаты
+                if (j < 0) j = 0;                             //если корабль вверху то срежем верхнюю строку
+                if (j == size) break;                      //если корабль внизу срежем нижнюю строку
+                if (gameBoardStr[j][i].equals("x")) {         //проверим не попали ли мы на старый корабль
+                    flag = true;                             //флаг если попали на старый
+                    break;
+                }
+            }
+        }
+        return flag;
+    }
+
 }

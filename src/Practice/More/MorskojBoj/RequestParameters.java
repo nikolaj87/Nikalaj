@@ -26,41 +26,41 @@ class RequestParameters {
     }
 
 
-    static Boolean isPlayVsPc(){ //метод примет Y N вернет true false
-        String str="";
-        while(true) {
-            System.out.println("Играем против компьютера? Y Или сам с собой? N");
-            Scanner scanner = new Scanner(System.in);
-            str = scanner.nextLine();
-            str = str.toLowerCase();
-            if (str.equals("y")) {
-                return true;
-            } else if (str.equals("n")) {
-                return false;
-            } else {
-                System.out.println("ошибка ввода с клавиатуры");
-            }
-        }
-    }
+//    static Boolean isPlayVsPc(){ //метод примет Y N вернет true false
+//        String str="";
+//        while(true) {
+//            System.out.println("Играем против компьютера? Y Или сам с собой? N");
+//            Scanner scanner = new Scanner(System.in);
+//            str = scanner.nextLine();
+//            str = str.toLowerCase();
+//            if (str.equals("y")) {
+//                return true;
+//            } else if (str.equals("n")) {
+//                return false;
+//            } else {
+//                System.out.println("ошибка ввода с клавиатуры");
+//            }
+//        }
+//    }
 
-    static boolean isStandartGame (){ //метод примет только Y N
-        String str="";
-        while(true) {
-            System.out.println("поставить стандартный набор кораблей?(Y) " +
-                    "или настроить игровое поле(N)");
-            Scanner scanner = new Scanner(System.in);
-            str = scanner.nextLine();
-            str = str.toLowerCase();
-            if (str.equals("y")) {
-                return true;
-            } else if (str.equals("n")) {
-                return false;
-            } else {
-                System.out.println("ошибка ввода с клавиатуры");
-            }
-        }
-
-    }
+//    static boolean isStandartGame (){ //метод примет только Y N
+//        String str="";
+//        while(true) {
+//            System.out.println("поставить стандартный набор кораблей?(Y) " +
+//                    "или настроить игровое поле(N)");
+//            Scanner scanner = new Scanner(System.in);
+//            str = scanner.nextLine();
+//            str = str.toLowerCase();
+//            if (str.equals("y")) {
+//                return true;
+//            } else if (str.equals("n")) {
+//                return false;
+//            } else {
+//                System.out.println("ошибка ввода с клавиатуры");
+//            }
+//        }
+//
+//    }
 
     static int parameterRequestInt(String message){//метод просит размер игры и тестирует ввод
         boolean flag = true;
@@ -80,6 +80,7 @@ class RequestParameters {
         }
         return Integer.parseInt(size);          //возвращаю размер игры в интежер
     }
+
 
     static String requestFire(String message, int size){
         String str = "";                 //метод запрашивает ход и примет только букву +цифру
@@ -116,6 +117,7 @@ class RequestParameters {
         }
         return str;     //возвращаем проверенную строку в формате 1a
     }
+
 
     static int isAddShip (){ //метод спрашивает Y/N и примет только корректный ввод
         String str="";

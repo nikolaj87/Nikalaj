@@ -10,7 +10,7 @@ class GameBoard {
         gameBoardStr = new String[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                gameBoardStr[i][j] = SeaFight_1_04_user.symbol_start;
+                gameBoardStr[i][j] = "\u00B7";
             }
         }
     }
