@@ -8,28 +8,36 @@ package Practice.More.MorskojBoj;
 //4 версия делает корабли разного размера
 //5 версия добавляется игра против кумпьютера
 
-//напоминания. Написать метод возвращающий сообщения из спика рандомно. чтоб сообщение менялось
+//напоминания. реквест ход игрока править.
 
 public class Demo {
     public static void main(String[] args) {
 
-        int size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 9)");
-        MorskojBoj_1_03 boj = new MorskojBoj_1_03(size);
-        GameBoard board = new GameBoard();
+        int size;
+        if(RequestParameters.isStandartGame()) {
+            size = 10;
+            MorskojBoj_1_04 boj = new MorskojBoj_1_04(size);
+            GameBoard board = new GameBoard(size);
+            board.createBoardStr();
+            board.setStandartBoard();
+            board.print();
+            boj.gameBoardStr=board.readyGameBoardReturner();  //передаю массив для игры
+            boj.game();                  //начало игры
 
-        board.createBoardStr();      //обьявление массива
-
-        board.setShip();             //установка корабля по умолчанию
-//        board.print();               //отладка
-        board.setAnotherShip();      //добавление корабля
-//        board.print();             //печать для отладки
-        boj.gameBoardStr=board.readyGameBoardReturner();  //передаю массив для игры
-//        boj.print();               //печать для отладки
-        boj.game();                  //начало игры
+        } else {
+            size = RequestParameters.parameterRequestInt("Введите размер поля(от 3 до 10)");
+            MorskojBoj_1_04 boj = new MorskojBoj_1_04(size);
+            GameBoard board = new GameBoard(size);
+            board.createBoardStr();
+            board.print();
 
 
 
-
-
+//            board.setShip(3);
+            board.setMoreShips();
+            board.print();
+            boj.gameBoardStr=board.readyGameBoardReturner();  //передаю массив для игры
+            boj.game();                  //начало игры
+        }
     }
 }

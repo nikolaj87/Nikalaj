@@ -3,6 +3,28 @@ package Practice.More.MorskojBoj;
 import java.util.Scanner;
 
 class RequestParameters {
+
+    static boolean isStandartGame (){
+        boolean flag;
+        String str="";
+        while(true) {
+            System.out.println("поставить стандартный набор кораблей?(Y) " +
+                    "или настроить игровое поле(N)");
+            Scanner scanner = new Scanner(System.in);
+            str = scanner.nextLine();
+            str = str.toLowerCase();              //на всякий случай к нижнему регистру
+            if (str.equals("y")) {
+                flag = true;
+                break;
+            } else if (str.equals("n")) {
+                flag = false;
+                break;
+            }
+            System.out.println("ошибка ввода с клавиатуры");
+        }
+        return flag;
+    }
+
     static int parameterRequestInt(String message){//метод просит размер игры и тестирует ввод
         boolean flag = true;
         String size = "";
@@ -11,7 +33,7 @@ class RequestParameters {
             System.out.println(message);
             Scanner scanner = new Scanner(System.in);
             size = scanner.nextLine();
-            for (int i = 3; i <10 ; i++) {
+            for (int i = 3; i <11 ; i++) {
                 test = i + "";
                 if (size.equals(test)){           //только цифра 3-9 пройдет проверку
                     flag = false;
@@ -22,7 +44,7 @@ class RequestParameters {
         return Integer.parseInt(size);          //возвращаю размер игры в интежер
     }
 
-    static String parameterRequestStr(String message, int size){
+    static String requestFire(String message, int size){
         String str = "";                 //метод запрашивает ход и примет только букву +цифру
         boolean flag = true;            //флаг для цифры
         boolean flag1 = true;           //флаг для буквы
@@ -43,7 +65,7 @@ class RequestParameters {
                 mychar1 = str.charAt(1) + "";   //второй символ
 
                 for (int i = 0; i < size; i++) {
-                    String myI = (i + 1) + "";   //привожу символ к строке
+                    String myI = (i) + "";   //привожу символ к строке
                     if (mychar1.equals(mychar + "")){   //только буква a b c d... пройдет проверку
                         flag = false;                //упускаем флаг при успехе
                     }
@@ -58,24 +80,22 @@ class RequestParameters {
         return str;     //возвращаем проверенную строку в формате 1a
     }
 
-    static boolean isAddShip (String message){ //метод спрашивает Y/N и примет только корректный ввод
-        boolean flag;
+    static int isAddShip (){ //метод спрашивает Y/N и примет только корректный ввод
         String str="";
-        while(true) {
-            System.out.println(message);
+        while (true) {
+            System.out.println("Какой корабль поставить? (1-2-3-4). Выход - Q");
             Scanner scanner = new Scanner(System.in);
             str = scanner.nextLine();
-            str = str.toLowerCase();              //на всякий случай к нижнему регистру
-            if (str.equals("y")) {
-                flag = true;
-                break;
-            } else if (str.equals("n")) {
-                flag = false;
-                break;
+            str = str.toLowerCase();       //на всякий случай к нижнему регистру
+        if(str.equals("1") || str.equals("2")|| str.equals("3")|| str.equals("4")){
+            return Integer.parseInt(str);
             }
-            System.out.println("ошибка ввода с клавиатуры");
+        else if(str.equals("q")){
+            return 5;
         }
-        return flag;
+        else
+            System.out.println("ошибка ввода");
+        }
     }
 
 }

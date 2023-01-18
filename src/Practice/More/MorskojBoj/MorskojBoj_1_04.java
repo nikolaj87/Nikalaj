@@ -1,10 +1,11 @@
 package Practice.More.MorskojBoj;
 
-class MorskojBoj_1_03 {
+class MorskojBoj_1_04 {
 
-    String[][]gameBoardStr;
-    static int size;
-    static int shotToWin = 3;
+    int size;
+    String[][]gameBoardStr = new String[size][size];
+
+    static int shotToWin = 0;
     static String symbol_start = "\u00B7";
     static String symbol_empty = "*";
     static String symbol_ataked = "\u25A0";
@@ -16,10 +17,10 @@ class MorskojBoj_1_03 {
             printToConsole();
             if (count == shotToWin) break;
             //получаем координаты выстрела x y
-            String userAtak = RequestParameters.parameterRequestStr("Делайте ход № " + (fire+1) + " Еще есть вражеские корабли(ль) " +
+            String userAtak = RequestParameters.requestFire("Делайте ход № " + (fire+1) + " Еще есть вражеские корабли(ль) " +
                     "(например 1A)", size);
             int y = (userAtak.charAt(1)-97);
-            int x = Integer.parseInt(userAtak.charAt(0) + "")-1;
+            int x = Integer.parseInt(userAtak.charAt(0) + "");
 
             fire++;
             if (gameBoardStr[x][y].equals("x")) {
@@ -45,8 +46,8 @@ class MorskojBoj_1_03 {
         }
         System.out.println();
         for (int i = 0; i < gameBoardStr.length; i++) {
-            if (i>=9){System.out.print((i + 1) + "| ");}
-            else{System.out.print((i + 1) + " | ");}
+            if (i>9){System.out.print((i) + "| ");}
+            else{System.out.print((i) + " | ");}
             for (int j = 0; j < gameBoardStr[0].length; j++) {
                 if (gameBoardStr[i][j].equals("x")) {
                     System.out.print(symbol_start + " ");
@@ -59,14 +60,11 @@ class MorskojBoj_1_03 {
         }
     }
 
-    MorskojBoj_1_03(int size) {
+       public MorskojBoj_1_04(int size) {
         this.size = size;
     }
 
-    MorskojBoj_1_03() {
-    }
-
-    void print(){                               //распечатать поле для тестировки и отладки
+    void print1(){                               //распечатать поле для тестировки и отладки
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.print(gameBoardStr[i][j] + " ");
