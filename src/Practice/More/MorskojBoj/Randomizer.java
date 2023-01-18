@@ -2,8 +2,6 @@ package Practice.More.MorskojBoj;
 
 class Randomizer {
 
-//    static int size = GameBoard.size;
-
     static int setterVerticalHorizontal (){
         return ((int)(Math.random()*2));
     }
@@ -13,7 +11,7 @@ class Randomizer {
     }
 
     static int randomSize_2 (int shipSize, int size){
-        return (int)(Math.random() * (size-shipSize - 1));
+        return (int)(Math.random() * (size-(shipSize - 1)));
     }
 
 }

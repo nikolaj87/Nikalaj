@@ -10,12 +10,12 @@ class GameBoard {
         gameBoardStr = new String[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                gameBoardStr[i][j] = MorskojBoj_1_04.symbol_start;
+                gameBoardStr[i][j] = SeaFight_1_04_user.symbol_start;
             }
         }
     }
 
-    void print() {                               //распечатать поле для тестировки и отладки
+    void print() {  //распечатать поле для тестировки и отладки
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.print(gameBoardStr[i][j] + " ");
@@ -37,10 +37,16 @@ class GameBoard {
         setShip(1);
     }
 
+    void setMoreShips() {                 //ставим больше кораблей.
+        while (true) {                    //начинаем цикл
+            int count = RequestParameters.isAddShip();
+            if(count==5) break;
+            else setShip(count);
+        }
+    }
 
-    void setShip(int shipSize) {                     //метод на пустом поле ставит корабль
+    void setShip(int shipSize) {                     //метод ставит корабль
 
-        int count=0;
         for (int z = 0; z < 100; z++) {              //цикл for 100 раз попробует поставить корабль
             int x, y;                                //обьявляем координаты
             int isVertical = Randomizer.setterVerticalHorizontal();
@@ -53,30 +59,19 @@ class GameBoard {
             }
             if (gameBoardAnalyser(x, y, isVertical, shipSize)) {       //анализируем нет ли рядом корабля
                 setAddShip(x, y, isVertical, shipSize);                //если нету - размещаем новый
-                MorskojBoj_1_04.shotToWin += shipSize;                 //параметр считает необходимое количество попаданий по цели
-                shipCounter++;
+                SeaFight_1_04_user.shotToWin = SeaFight_1_04_user.shotToWin + shipSize;                 //параметр считает необходимое количество попаданий по цели
+                shipCounter++;                                         //сколько кораблей поставлено уже
                 System.out.println("Корабль " + shipCounter + " успешно!!!");
                 break;                                       //прерываем цикл досрочно чтоб не работать 100 раз
             }
             if (z == 99) {
                 System.out.println("не удалось разместить корабль");
-//                System.out.println("Начинаем игру!");
             }
         }
     }
 
-    void setMoreShips() {                 //ставим больше кораблей.
-        while (true) {                    //начинаем цикл
-            int count = RequestParameters.isAddShip();
-//            System.out.println(count);
-            if(count==5) break;
-            else setShip(count);
-        }
-
-    }
-
-    void setAddShip(int x, int y, int isVertical, int shipSize) {
-        if (isVertical == 0) {
+    void setAddShip(int x, int y, int isVertical, int shipSize) { //метод получает проверенные координаты и
+        if (isVertical == 0) {                                    //по ним ставит корабль заданной длины
             for (int i = 0; i < shipSize; i++) {
                 gameBoardStr[y + i][x] = "x";
             }
