@@ -28,11 +28,12 @@ public class Demo {
                 board.createBoardStr();
                 board.setStandartBoard();
                 draka.pcArray = board.readyGameBoardReturner();
-                System.out.println(Arrays.deepToString(draka.pcArray));
+//                System.out.println(Arrays.deepToString(draka.pcArray));
 
 
 //                draka.printArr(board.readyGameBoardReturner());
-                draka.userArrayCreate();
+
+            draka.userArrayCreate();
 
 //                board.createBoardStr();
 //                board.setStandartBoard();

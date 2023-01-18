@@ -34,12 +34,22 @@ public class SeaFightVsCympyter {
 
     void myArrayPrintToConsole() {
 
-        char mychar = 'a';
+
         System.out.print("    ");
+        char mychar = 'a';
         for (int k = 0; k < userArray.length; k++) {
+
             System.out.print(mychar + " ");
             mychar++;
         }
+        System.out.print("                        ");
+        mychar = 'a';
+        for (int k = 0; k < userArray.length; k++) {
+
+            System.out.print(mychar + " ");
+            mychar++;
+        }
+        //=======================================================
         System.out.println();
         for (int i = 0; i < userArray.length; i++) {
             if (i > 9) {
@@ -47,6 +57,7 @@ public class SeaFightVsCympyter {
             } else {
                 System.out.print((i) + " | ");
             }
+            //-------------------------------------
             for (int j = 0; j < userArray.length; j++) {
                 if (userArray[i][j].equals("x")) {
                     System.out.print("\u00B7" + " ");
@@ -54,33 +65,18 @@ public class SeaFightVsCympyter {
                     System.out.print(userArray[i][j] + " ");
                 }
             }
-            System.out.print("|");
-            System.out.println();
-        }
-        char mychar2 = 'a';
-        System.out.print("    ");
-        for (int k = 0; k < userArray.length; k++) {
-            System.out.print(mychar2 + " ");
-            mychar2++;
-        }
-        System.out.println();
+            System.out.print("|                   " + i + " | ");
 
-        for (int m = 0; m < userArray.length; m++) {
-            if (m > 9) {
-                System.out.print((m) + "| ");
-            } else {
-                System.out.print((m) + " | ");
-            }
-            for (int n = 0; n < userArray.length; n++) {
-                if (userArray[m][n].equals("x")) {
-                    System.out.print("\u00B7" + " ");
-                } else {
-                    System.out.print(userArray[m][n] + " ");
-                }
+            for (int j = 0; j < userArray.length; j++) {
+                System.out.print("\u00B7" + " ");
+
             }
             System.out.print("|");
+
             System.out.println();
         }
+        //=====================================================
+        System.out.println("На этапе реализации");
     }
 
 
