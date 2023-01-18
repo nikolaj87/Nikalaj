@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class RequestParameters {
 
-    static boolean isStandartGame (){
+    static boolean isStandartGame (){ //метод примет только Y N
         boolean flag;
         String str="";
         while(true) {
@@ -12,17 +12,16 @@ class RequestParameters {
                     "или настроить игровое поле(N)");
             Scanner scanner = new Scanner(System.in);
             str = scanner.nextLine();
-            str = str.toLowerCase();              //на всякий случай к нижнему регистру
+            str = str.toLowerCase();
             if (str.equals("y")) {
-                flag = true;
-                break;
+                return true;
             } else if (str.equals("n")) {
-                flag = false;
-                break;
+                return false;
+            } else {
+                System.out.println("ошибка ввода с клавиатуры");
             }
-            System.out.println("ошибка ввода с клавиатуры");
         }
-        return flag;
+
     }
 
     static int parameterRequestInt(String message){//метод просит размер игры и тестирует ввод

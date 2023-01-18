@@ -1,6 +1,6 @@
 package Practice.More.MorskojBoj;
 
-class MorskojBoj_1_04 {
+class SeaFight_1_04_user {
 
     int size;
     String[][]gameBoardStr = new String[size][size];
@@ -18,7 +18,7 @@ class MorskojBoj_1_04 {
             if (count == shotToWin) break;
             //получаем координаты выстрела x y
             String userAtak = RequestParameters.requestFire("Делайте ход № " + (fire+1) + " Еще есть вражеские корабли(ль) " +
-                    "(например 1A)", size);
+                    "(например 0A)", size);
             int y = (userAtak.charAt(1)-97);
             int x = Integer.parseInt(userAtak.charAt(0) + "");
 
@@ -60,7 +60,7 @@ class MorskojBoj_1_04 {
         }
     }
 
-       public MorskojBoj_1_04(int size) {
+       public SeaFight_1_04_user(int size) {
         this.size = size;
     }
 
