@@ -42,22 +42,13 @@ class RequestParameters {
 
                             //метод запрашивает ход и примет только букву +цифру
         while (true) {       //спрашивать пока не будет корректного ввода
-            char mychar;           //поле универсального размера а значит буду через чар задавать координату
             System.out.println(message);
             String str = requestStr();
-            for (int i = 0; i < size; i++) {
-                String test = i + "";
-                mychar = 'a';
-                for (int j = 0; j < size; j++) {
-                    test +="" + mychar;
-                    mychar++;
-                    if (str.equals(test)) {
-                        return str;
-                     }
-                    test = test.charAt(0)+"";
-                }
+            if (Analizators.shotInputAnalize(str, size)) {
+                return str;
+            } else {
+                System.out.println("ошибка ввода с клавиатуры " + str);
             }
-            System.out.println("ошибка ввода с клавиатуры " + str);
         }
     }
 

@@ -83,7 +83,7 @@ class GameBoard {
     }
 
     boolean gameBoardAnalyser(int x, int y, int isVertical, int shipSize) { //метод гибко проверяет координаты x y
-        boolean flag = true;                                               //массива невылетая за его пределы
+        boolean flag = true;                                               //массива не вылетая за его пределы
         int correctLen = 0;              //две переменные корректируют цикл 3x5 (для 3х корабля)
         int correctWid = 0;              //или 5x3 (для 3х корабля)
         if (isVertical == 0) {           // совершаем универсальную проверку или вертикаль или горизонталь

@@ -5,10 +5,10 @@ package Practice.More.MorskojBoj;
 //1 версия включает поле и 1 корабль
 //2 версия добавляет большее количество кораблей
 //3 работаем с архитектурой
-//4 версия делает корабли разного размера
+//4(текущая) работаем с архитектурой. версия делает корабли разного размера
 //5 версия добавляется игра против кумпьютера
 
-//напоминания: нету
+//напоминания: исправить баг и 4х кораблем
 
 import java.util.Arrays;
 
@@ -29,17 +29,11 @@ public class Demo {
                 board.setStandartBoard();
                 draka.pcArray = board.readyGameBoardReturner();
 //                System.out.println(Arrays.deepToString(draka.pcArray));
-
-
 //                draka.printArr(board.readyGameBoardReturner());
-
-            draka.userArrayCreate();
-
+                draka.userArrayCreate();
 //                board.createBoardStr();
 //                board.setStandartBoard();
 //                draka.userArray = board.readyGameBoardReturner();
-
-
             }
 
             case (2) -> {
