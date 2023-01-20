@@ -24,7 +24,8 @@ class SeaFight_1_04_user {
             int y = Integer.parseInt(userAtak.charAt(0) + "");
 
             fire++;
-            if (gameBoardStr[y][x].equals("x")) {      //если юзер угадал координату надо проверить это убитый корабль
+            if (gameBoardStr[y][x].equals("x")) {
+            //если юзер угадал координату надо проверить это убитый корабль
                 count++;
                 gameBoardStr[y][x] = "temp";
                 if(gameBoardAnalyser(x, y)){
