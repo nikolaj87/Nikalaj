@@ -26,7 +26,6 @@ class SeaFight_1_04_user {
             fire++;
             if (gameBoardStr[y][x].equals("x")) {      //если юзер угадал координату надо проверить это убитый корабль
                 count++;
-                gameBoardStr[y][x] = "temp";
                 if(gameBoardAnalyser(x, y)){
                     gameBoardStr[y][x] = symbol_ataked;
                     System.out.println(Messanger.messageReturnerGoal());
@@ -85,20 +84,21 @@ class SeaFight_1_04_user {
     }
 
     boolean gameBoardAnalyser(int x, int y) { //метод гибко проверяет координаты x y
-        boolean flag = false;                                               //массива невылетая за его пределы
+
+        gameBoardStr[y][x] = "temp";            //массива невылетая за его пределы
         for (int i = x - 1; i < x + 2; i++) {   //цикл проверит можно ли еще поставить корабль
             if (i < 0) continue;                                //если корабль в левом столбце то срежем -1 элемент цикла
             if (i == size) break;                            //если корабль в правом столбце то срежем size+1 элемент
             for (int j = y - 1; j < y + 2; j++) { //вложенный цикл для второй координаты
                 if (j < 0) continue;                             //если корабль вверху то срежем верхнюю строку
-                if (j == size) break;                      //если корабль внизу срежем нижнюю строку
+                if (j == size) break;
+                                                              //если корабль внизу срежем нижнюю строку
                 if (gameBoardStr[j][i].equals("x")) {         //проверим не попали ли мы на старый корабль
-                    flag = true;                             //флаг если попали на старый
-                    break;
+                    return true;
                 }
             }
         }
-        return flag;
+        return false;
     }
 
 }

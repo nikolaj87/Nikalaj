@@ -8,7 +8,7 @@ package Practice.More.MorskojBoj;
 //4(текущая) работаем с архитектурой. версия делает корабли разного размера
 //5 версия добавляется игра против кумпьютера
 
-//напоминания: исправить баг и 4х кораблем
+//напоминания: исправить баг  c 3x и 4х кораблем
 
 import java.util.Arrays;
 
@@ -42,7 +42,7 @@ public class Demo {
                 GameBoard board = new GameBoard(size);
                 board.createBoardStr();
                 board.setStandartBoard();
-//                board.print();
+                board.print();
                 boj.gameBoardStr = board.readyGameBoardReturner();
                 boj.game();
             }
