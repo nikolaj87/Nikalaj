@@ -6,7 +6,7 @@ public class ArrayTask1 {
 
     int[] myArray;
 
-    public void creator(int size) {                               //метод создает массив и наполняет значениями
+    void creator(int size) {                               //метод создает массив и наполняет значениями
         myArray = new int[size - 1];                              //
         boolean flag;
         for (int i = 0; i < myArray.length; i++) {                //внешний цикл отвечает за номер элемента
@@ -45,7 +45,7 @@ public class ArrayTask1 {
         for (int i = 1; i <= myArray.length; i++) {  //сложим все итерации цикла 1+2+3+4+5.....
             count = count + i - myArray[i-1];        //и отнимем от этого числа значение всех myArray[i]
         }
-        count = count + myArray.length+1;            //добавим последнюю итерацию ведь их больше на чем элементов массива
+        count = count + myArray.length+1;            //добавим последнюю итерацию ведь их больше на1 чем элементов массива
         return count;
     }
 
