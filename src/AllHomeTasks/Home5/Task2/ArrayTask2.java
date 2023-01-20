@@ -27,7 +27,7 @@ public class ArrayTask2 {
         }
     }
 
-    void arrayAnalize (int number){            //не работает
+    void arrayAnalize (int number){
 
         System.out.println(Arrays.toString(myArray));
         int counter = 0;
