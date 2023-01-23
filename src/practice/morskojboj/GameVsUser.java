@@ -25,7 +25,7 @@ public class GameVsUser {
     String interpretateUserShot(String str){
 
         String first = str.substring(0,1);
-        first = String.valueOf(Integer.parseInt(first));
+//        first = String.valueOf(Integer.parseInt(first));
         int second = (str.charAt(1) - 97);
         str = first + second;
         return str;
