@@ -1,4 +1,4 @@
-package practice.more;
+package practice.seafightprocedures;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package practice.more;
+package practice.seafightprocedures;
 
 class SeaFightUser {
 
