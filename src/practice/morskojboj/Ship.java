@@ -1,5 +1,5 @@
 package practice.morskojboj;
-
+//
 public class Ship {
 
     int size;

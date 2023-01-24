@@ -7,7 +7,7 @@ class RequestParameters {
     static String requestShot(String message, int size){
 
                             //метод запрашивает ход и примет только букву +цифру
-        while (true) {       //спрашивать пока не будет корректного ввода
+        while (true) {       //спрашивать пока не будет корректного  ввода
             System.out.println(message);
             String str = requestStr();
             if (shotInputAnalize(str, size)) {

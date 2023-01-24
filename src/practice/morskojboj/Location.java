@@ -1,6 +1,6 @@
 package practice.morskojboj;
 
-public class Location {
+public class Location { //
     int x;
     int y;
 }

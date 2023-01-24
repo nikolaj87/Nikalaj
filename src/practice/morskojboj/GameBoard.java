@@ -19,7 +19,7 @@ public class GameBoard {
 
     void createShip() {
         int numberOfShip = 0;
-        for (int size : shipSizes) {                                    //для всех размеров кораблей 4-3-3-2-2-2-1...
+        for (int size : shipSizes) {                                    //для  всех размеров кораблей 4-3-3-2-2-2-1...
             while (true) {
                 Random random = new Random();
                 int isVertical = random.nextInt(2);    //определить вертикальность горизональность
