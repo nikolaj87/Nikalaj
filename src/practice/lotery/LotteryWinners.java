@@ -4,7 +4,7 @@ public class LotteryWinners {
 
     static int amount;
 
-    void lottery() {
+    void lottery() {  //метод считает угаданные каждый игроком числа
 
         for (int i = 0; i < ListOfTickets.list.length; i++) {
             for (int j = 0; j < ListOfTickets.size; j++) {
@@ -17,7 +17,7 @@ public class LotteryWinners {
         }
     }
 
-    void winners() {
+    void winners() {  //выдуманный способ распределить выигрышь
         int counterFiveGuess = 0;
         int counterFourGuess = 0;
         int counterThreeGuess = 0;
