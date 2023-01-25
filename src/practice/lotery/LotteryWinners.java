@@ -1,6 +1,6 @@
 package practice.lotery;
 
-public class LotteryWinners {
+class LotteryWinners {
 
     static int amount;
 

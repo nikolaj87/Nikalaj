@@ -1,6 +1,6 @@
 package practice.lotery;
 
-public class ListOfTickets {
+class ListOfTickets {
 
     static Ticket[] list;
     static int[] winCombination;

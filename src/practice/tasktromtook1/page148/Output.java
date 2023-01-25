@@ -1,4 +1,4 @@
-package practice.tasktromtook1.Page148;
+package practice.tasktromtook1.page148;
 
 public class Output {
     public static void main(String[] args) {

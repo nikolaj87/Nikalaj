@@ -1,4 +1,4 @@
-package practice.tasktromtook1.Page70;
+package practice.tasktromtook1.page70;
 
 public class EchoTestDrive {
     //для e2.count = 10 - x==4 i x<4

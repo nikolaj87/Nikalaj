@@ -28,15 +28,15 @@ class RequestParameters {
     static boolean shotInputAnalize(String str, int size) {
         char mychar;
         for (int i = 0; i < size; i++) {
-            String test = i + "";
+            String test = String.valueOf(i);
             mychar = 'a';
             for (int j = 0; j < size; j++) {
-                test += "" + mychar;
+                test += mychar;
                 mychar++;
                 if (str.equals(test)) {
                     return true;
                 }
-                test = test.charAt(0) + "";
+                test = String.valueOf(test.charAt(0));
             }
         }
         return false;

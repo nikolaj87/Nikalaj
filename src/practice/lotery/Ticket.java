@@ -8,12 +8,12 @@ class Ticket {
     int guessedNumbers;
     int[] numbers = new int[ListOfTickets.size];
 
-    public Ticket(String userName, int[] ticket) {
+    Ticket(String userName, int[] ticket) {
         this.userName = userName;
         this.numbers = ticket;
     }
 
-    public Ticket(String userName) {
+    Ticket(String userName) {
         this.userName = userName;
     }
 

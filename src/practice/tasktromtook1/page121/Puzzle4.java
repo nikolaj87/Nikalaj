@@ -1,4 +1,4 @@
-package practice.tasktromtook1.Page121;
+package practice.tasktromtook1.page121;
 
 public class Puzzle4 {
     public static void main(String[] args) {
