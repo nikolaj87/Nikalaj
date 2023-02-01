@@ -10,9 +10,9 @@ public class KamenNoznicy {
                 "\n1 камень " +
                 "\n2 ножницы" +
                 "\n3 бумага");
-        Double choise = scanner.nextDouble();
+        double choise = scanner.nextDouble();
 
-        Double casino = Math.random();
+        double casino = Math.random();
 
         if (casino < 0.33 & choise == 1)
             System.out.println("бумага накрывает ваш камень");
