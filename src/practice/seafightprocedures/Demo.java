@@ -10,7 +10,7 @@
 //
 ////напоминания: исправить баг  c 3x и 4х кораблем
 //
-//public class Demo {
+//public class practice.calculator.Demo {
 //    public static void main(String[] args) {
 //
 //        int size;
