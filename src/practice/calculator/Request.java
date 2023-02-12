@@ -7,8 +7,7 @@ public class Request {
     static double requestDouble(String message){
         Scanner scan = new Scanner(System.in);
         System.out.println(message);
-        double number = scan.nextDouble();
-        return number;
+        return scan.nextDouble();
     }
 
     static String requestOperator(String message) {

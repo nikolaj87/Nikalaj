@@ -1,4 +1,4 @@
-package practice.tasktromtook1.page94;
+package practice.taskfrombook1.page94;
 
 class Islands {
     public static void main(String[] args) {

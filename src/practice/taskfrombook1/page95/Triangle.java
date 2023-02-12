@@ -1,4 +1,4 @@
-package practice.tasktromtook1.page95;
+package practice.taskfrombook1.page95;
 
 public class Triangle {
     double area;

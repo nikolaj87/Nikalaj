@@ -18,7 +18,7 @@ public class Demo {
                 break;
             case "/":
                 if (number2 == 0) {
-                    System.out.println("на ноль дельть нельзя");
+                    System.out.println("на ноль делить нельзя");
                 } else
                     System.out.println(number1 + " " + operator + " " + number2 + " = " + calc.div(number1, number2));
                 break;

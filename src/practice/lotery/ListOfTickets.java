@@ -35,8 +35,8 @@ class ListOfTickets {
             while (true) {                                        //вайл пытается призначить
                 int number = (int) (Math.random() * 50 + 1);      //случайное число
                 flag = false;
-                for (int j = 0; j < fiveNumbers.length; j++) {     //внутренний фор проверяет нет ли уже такого числа
-                    if (fiveNumbers[j] == number) {
+                for (int fiveNumber : fiveNumbers) {     //внутренний фор проверяет нет ли уже такого числа
+                    if (fiveNumber == number) {
                         flag = true;
                         break;
                     }

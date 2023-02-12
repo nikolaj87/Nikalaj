@@ -1,20 +1,15 @@
-package practice.tasktromtook1.page148;
+package practice.taskfrombook1.page148;
 
 public class Output {
     public static void main(String[] args) {
-//                Output o = new Output();
-//        o.go();
-        char num = 'a';
-        for (int i = 0; i < 10; i++) {
-
-            int num2 = num;
-        System.out.println(num2 + " " + num);
-        num++;
-    }
-
-
-
-
+        Output o = new Output();
+        o.go();
+//        char num = 'a';
+//        for (int i = 0; i < 10; i++) {
+//
+//            int num2 = num;
+//        System.out.println(num2 + " " + num);
+//        num++;
     }
 
     void go(){
@@ -28,7 +23,7 @@ public class Output {
                 System.out.println(" x = " + i);
                 break;
             }
-            System.out.println(i + " " + y);
+//            System.out.println(i + " " + y);
         }
     }
 
