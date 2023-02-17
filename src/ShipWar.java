@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ShipWar {
+class ShipWar {
 
     protected ArrayList<Integer> loc = new ArrayList<>();
 

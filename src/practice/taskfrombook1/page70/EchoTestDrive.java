@@ -1,6 +1,6 @@
 package practice.taskfrombook1.page70;
 
-public class EchoTestDrive {
+class EchoTestDrive {
     //для e2.count = 10 - x==4 i x<4
     //для e2.count = 24 - x==4 i x<4
     public static void main(String[] args) {

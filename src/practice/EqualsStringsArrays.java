@@ -1,6 +1,6 @@
 package practice;
 
-public class EqualsStringsArrays {
+class EqualsStringsArrays {
     public static void main(String[] args) {
 
         String[] array = new String[5];

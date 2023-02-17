@@ -1,6 +1,6 @@
 package practice.taskfrombook2.page263;
 
-public class Test {
+class Test {
     int a;
 
     public Test(int a) {

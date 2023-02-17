@@ -1,6 +1,6 @@
 package practice;
 
-public class StepenDvojki {
+class StepenDvojki {
     public static void main(String[] args) {
         // создать алгоритм выведения 2 в степени
         int num1=34;

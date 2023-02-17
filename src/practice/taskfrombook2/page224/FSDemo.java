@@ -1,6 +1,6 @@
 package practice.taskfrombook2.page224;
 
-public class FSDemo {
+class FSDemo {
     public static void main(String[] args) {
         FailSoftArray fs = new FailSoftArray(5, -1);
         int x;

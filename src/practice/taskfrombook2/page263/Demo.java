@@ -1,6 +1,6 @@
 package practice.taskfrombook2.page263;
 
-public class Demo {
+class Demo {
     public static void main(String[] args) {
         Test obj1 = new Test(10);
         Test obj2 = new Test(5);

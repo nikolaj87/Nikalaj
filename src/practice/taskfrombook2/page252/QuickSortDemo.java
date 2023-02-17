@@ -1,6 +1,6 @@
 package practice.taskfrombook2.page252;
 
-public class QuickSortDemo {
+class QuickSortDemo {
     public static void main(String[] args) {
 
         char[] a = {'a', 'd', 'x', 'z', 'r', 'p', 'j', 'i', 'z', 'a'};

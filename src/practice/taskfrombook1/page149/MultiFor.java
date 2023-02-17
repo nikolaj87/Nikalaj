@@ -1,6 +1,6 @@
 package practice.taskfrombook1.page149;
 
-public class MultiFor {
+class MultiFor {
     public static void main(String[] args) {
 
         for (int x = 0; x < 4; x++) {

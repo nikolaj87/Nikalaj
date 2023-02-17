@@ -9,8 +9,10 @@ public class Demo {
         Wolf myWolf = new Wolf();
         Animal gray = new Wolf();
 
-            myWolf.walk();
-            myWolf.eat();
+            myWolf.setSize(120);
+            myWolf.name = "Fluffy";
+
+        System.out.println(myWolf);
 
 
     }

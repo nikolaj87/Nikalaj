@@ -2,7 +2,7 @@ package practice.taskfrombook2.page252;
 
 import java.util.Arrays;
 
-public class QuickSort {
+class QuickSort {
 
     static void qsort(char[] items){
         qs(items, 0, items.length-1);

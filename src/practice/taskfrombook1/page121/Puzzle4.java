@@ -1,6 +1,6 @@
 package practice.taskfrombook1.page121;
 
-public class Puzzle4 {
+class Puzzle4 {
     public static void main(String[] args) {
         Puzzle4b[] obs = new Puzzle4b[6];
         int y = 1;

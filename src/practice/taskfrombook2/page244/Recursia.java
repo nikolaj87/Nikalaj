@@ -1,6 +1,6 @@
 package practice.taskfrombook2.page244;
 
-public class Recursia {
+class Recursia {
     static int factorRec(int n){
         int result = 0;
         if(n==1) return 1;

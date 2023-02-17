@@ -2,7 +2,7 @@ package practice.taskfrombook1.gamefrombookseafight;
 
 import java.util.ArrayList;
 
-public class DotCom {
+class DotCom {
 
     private ArrayList<String> locationCells;
 

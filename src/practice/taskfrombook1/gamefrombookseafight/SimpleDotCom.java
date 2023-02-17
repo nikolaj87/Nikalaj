@@ -1,6 +1,6 @@
 package practice.taskfrombook1.gamefrombookseafight;
 
-public class SimpleDotCom {
+class SimpleDotCom {
 
     int numOfHits;
     int[] locationCells = new int[7];

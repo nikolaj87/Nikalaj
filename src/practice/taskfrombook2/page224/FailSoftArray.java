@@ -3,7 +3,7 @@ package practice.taskfrombook2.page224;
 //программа создает массив и зашишает его данные. Не дает обратиться к элементу
 //который лежит за пределами массива. Демонстрация работы privat переменных.
 
-public class FailSoftArray {
+class FailSoftArray {
     private int []a;
     private int errval;
 

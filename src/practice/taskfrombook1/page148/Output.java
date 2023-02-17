@@ -1,6 +1,6 @@
 package practice.taskfrombook1.page148;
 
-public class Output {
+class Output {
     public static void main(String[] args) {
         Output o = new Output();
         o.go();

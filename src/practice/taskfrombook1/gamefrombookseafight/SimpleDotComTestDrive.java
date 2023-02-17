@@ -1,6 +1,6 @@
 package practice.taskfrombook1.gamefrombookseafight;
 
-public class SimpleDotComTestDrive {
+class SimpleDotComTestDrive {
     public static void main(String[] args) {
         SimpleDotCom dot = new SimpleDotCom();
 

@@ -1,6 +1,6 @@
 package practice.taskfrombook2.page254;
 
-public class Outer {
+class Outer {
     private int[]  nums;
 
     Outer(int[] n){

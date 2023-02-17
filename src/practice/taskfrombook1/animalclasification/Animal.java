@@ -4,6 +4,8 @@ public class Animal {
 
     private int size;
     String name;
+    protected String breed;
+    public int numOfLegs = 4;
 
     void walk(){
         System.out.println("animal гуляет");
@@ -18,9 +20,13 @@ public class Animal {
         System.out.println("animal разговаривает");
     }
 
+    Animal obj = new Animal();
+
 
     public int getSize() {
         return size;
+
+
     }
     public void setSize(int size) {
         this.size = size;
@@ -32,4 +38,11 @@ public class Animal {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "size=" + size +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

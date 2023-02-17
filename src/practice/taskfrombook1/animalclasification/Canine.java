@@ -14,6 +14,7 @@ public class Canine extends Animal {
     }
 
 
+
     public boolean isPlayWithChildren() {
         return playWithChildren;
     }
