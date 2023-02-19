@@ -25,6 +25,7 @@ public class Wolf extends Canine implements ToyAnimal {
         obj.makeGoodNoise();
         vally.makeGoodNoise();
         int a = price;
+        System.out.println(a);
     }
 
 }

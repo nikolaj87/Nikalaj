@@ -10,10 +10,20 @@ import java.util.Scanner;
         return scanner.nextLine();
     }
 
-    static int numberRequest(String message){
-        System.out.println(message);
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+    static int numberRequest(String message) {
+        while (true) {
+            System.out.println(message);
+            int input = 0;
+            Scanner scanner = new Scanner(System.in);
+            try {
+                input = scanner.nextInt();
+            } catch (Throwable exp) {
+                System.out.println("пробуем еще раз");
+            }
+            if (input > 0) {
+                return input;
+            }
+        }
     }
 
 }

@@ -37,34 +37,29 @@ class LotteryWinners {
             }
         }
 
-        double casinoWin;
-        double fiveWin;
-        double fourWin;
-        double threeWin;
-        double twoWin;
-        double oneWin;
+        double casinoWin = 0;
+        double fiveWin = 0;
+        double fourWin = 0;
+        double threeWin = 0;
+        double twoWin = 0;
+        double oneWin = 0;
 
-        casinoWin =  amount * 0.1;
-        if(counterFiveGuess > 0)
-            fiveWin   =  amount * 0.9 / 2 / counterFiveGuess;
-        else
-            fiveWin = 0;
-        if(counterFourGuess > 0)
-            fourWin   = (amount * 0.9 - fiveWin) / 2 / counterFourGuess;
-        else
-            fourWin = 0;
-        if(counterThreeGuess > 0)
-            threeWin  = (amount * 0.9 - fiveWin - fourWin) / 2 /counterThreeGuess;
-        else
-            threeWin = 0;
-        if(counterTwoGuess > 0 )
-            twoWin    = (amount * 0.9 - fiveWin - fourWin - threeWin) / 2 / counterTwoGuess;
-        else
-            twoWin = 0;
-        if (counterOneGuess > 0)
-            oneWin    = (amount * 0.9 - fiveWin - fourWin - threeWin - twoWin)/ counterOneGuess;
-        else
-            oneWin = 0;
+
+        try {
+            casinoWin = amount * 0.1;
+            if (counterFiveGuess > 0)
+                fiveWin = amount * 0.9 / 2 / counterFiveGuess;
+            if (counterFourGuess > 0)
+                fourWin = (amount * 0.9 - fiveWin) / 2 / counterFourGuess;
+            if (counterThreeGuess > 0)
+                threeWin = (amount * 0.9 - fiveWin - fourWin) / 2 / counterThreeGuess;
+            if (counterTwoGuess > 0)
+                twoWin = (amount * 0.9 - fiveWin - fourWin - threeWin) / 2 / counterTwoGuess;
+            if (counterOneGuess > 0)
+                oneWin = (amount * 0.9 - fiveWin - fourWin - threeWin - twoWin) / counterOneGuess;
+        } catch (ArithmeticException exp) {
+            System.out.println("деление на 0");
+        }
 
         System.out.println("казино сегодня подняло " + casinoWin + "$");
         System.out.println("пять чисел угадало " + counterFiveGuess + " игроков по " + fiveWin + "$");
