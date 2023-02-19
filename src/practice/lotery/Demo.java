@@ -2,7 +2,7 @@ package practice.lotery;
 
 import java.util.Arrays;
 import java.util.List;
-//чтоб нормально отработало надо 20-30тыс участников
+//для иммитации реальных условий надо 200-500 тыс участников
 public class Demo {
 
     public static void main(String[] args) {
