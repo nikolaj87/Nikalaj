@@ -1,7 +1,8 @@
 package practice.lotery;
 
 import java.util.Arrays;
-
+import java.util.List;
+//чтоб нормально отработало надо 20-30тыс участников
 public class Demo {
 
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class Demo {
         game.createList(myTicket, numberOfPlayers);
 
         System.out.println(Arrays.toString(ListOfTickets.list));
+        System.out.println("ваш билет " + ListOfTickets.list[0]);
         System.out.println("выиграшная комбинация " + Arrays.toString(ListOfTickets.winCombination));
 
         winners.lottery();
