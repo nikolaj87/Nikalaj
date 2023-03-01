@@ -17,9 +17,15 @@ import java.util.Scanner;
             Scanner scanner = new Scanner(System.in);
             try {
                 input = scanner.nextInt();
-            } catch (Throwable exp) {
+            }
+            catch (ArithmeticException exp){
+//uj
+            }
+
+            catch (Throwable exp) {
                 System.out.println("пробуем еще раз");
             }
+
             if (input > 0) {
                 return input;
             }

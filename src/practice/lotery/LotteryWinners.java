@@ -61,6 +61,7 @@ class LotteryWinners {
             System.out.println("деление на 0");
         }
 
+
         System.out.println("казино сегодня подняло " + casinoWin + "$");
         System.out.println("пять чисел угадало " + counterFiveGuess + " игроков по " + fiveWin + "$");
         System.out.println("четыре числа угадало " + counterFourGuess + " игроков по " + fourWin + "$");
