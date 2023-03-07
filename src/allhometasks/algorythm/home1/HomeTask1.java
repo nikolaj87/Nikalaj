@@ -19,7 +19,7 @@ public class HomeTask1 {
 
     }
 
-    protected static boolean isPalindromeStr (int number){
+    private static boolean isPalindromeStr (int number){
         String newNumber = String.valueOf(number);
         String check = "";
         for (int i = newNumber.length() - 1; i >= 0; i--) {
@@ -28,7 +28,7 @@ public class HomeTask1 {
         return check.equals(newNumber);
     }
 
-    protected static int findSingleElem(int[] arr){
+    private static int findSingleElem(int[] arr){
         for (int i = 0; i < arr.length; i = i + 2) {
             if (arr[i] != arr[i+1]) return arr[i];
         }
