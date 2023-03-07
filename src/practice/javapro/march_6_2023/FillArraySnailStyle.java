@@ -2,67 +2,65 @@ package practice.javapro.march_6_2023;
 
 public class FillArraySnailStyle {
 
-    public static void main(String[] args) {
+        private int[][] array = new int[5][6];
+        private int horizontalStart = 0;
+        private int horizontalEnd = array[0].length;
+        private int verticalStart = 0;
+        private int verticalEnd = array.length;
 
-        int[][] array = new int[2][3];
-        int startI = 0;
-        int finishI = array[0].length;
-        int startJ = 0;
-        int finishJ = array.length;
+    void fillArray() {
 
-        while(startI < finishI && startJ < finishJ){
+            while (horizontalStart < horizontalEnd && verticalStart < verticalEnd) {
 
-            if(finishJ - startJ == 1){
-                for (int i = startI; i < finishI; i++) {
-                    array[startJ][i] = (int) (Math.random() * 9 + 1);
-//                    System.out.println(startJ + " " + i);
+                if (verticalEnd - verticalStart == 1) {
+                    fillLeftToRight();
+                    break;
                 }
-                break;
-            }
-
-            if(finishI - startI == 1){
-                for (int j = startJ; j < finishJ; j++) {
-                    array[j][finishI - 1] = (int) (Math.random() * 9 + 1);
-//                    System.out.println(j + " " + (finishI - 1));
+                if (horizontalEnd - horizontalStart == 1) {
+                    fillTopToBottom();
+                    break;
                 }
-                break;
-            }
+                fillLeftToRight();
+                fillTopToBottom();
+                fillRightToLeft();
+                fillBottomToTop();
 
+                horizontalStart++;
+                horizontalEnd--;
+                verticalStart++;
+                verticalEnd--;
+            }
+            printArray();
+    }
 
-            for (int i = startI; i < finishI; i++) {
-                array[startJ][i] = (int) (Math.random() * 9 + 1);
-//                System.out.println(startJ + " " + i);
-            }
-            for (int j = startJ + 1; j < finishJ; j++) {
-                array[j][finishI - 1] = (int) (Math.random() * 9 + 1);
-//                System.out.println(j + " " + (finishI - 1));
-            }
-            for (int i = finishI - 2; i >= startI; i--) {
-                array[finishJ - 1][i] = (int) (Math.random() * 9 + 1);
-//                System.out.println((finishJ - 1) + " " + i);
-            }
-            for (int j = finishJ - 2; j > startI; j--) {
-                array[j][startI] = (int) (Math.random() * 9 + 1);
-//                System.out.println(j + " " + (startI));
-            }
-
-            startI++;
-//            System.out.println(startI);
-            finishI--;
-//            System.out.println(finishI);
-            startJ++;
-//            System.out.println(startJ);
-            finishJ--;
-//            System.out.println(finishJ);
+    void fillLeftToRight() {
+        for (int i = horizontalStart; i < horizontalEnd; i++) {
+            array[verticalStart][i] = (int) (Math.random() * 9 + 1);
         }
+    }
+    void fillTopToBottom(){
+        for (int j = verticalStart + 1; j < verticalEnd; j++) {
+            array[j][horizontalEnd - 1] = (int) (Math.random() * 9 + 1);
+        }
+    }
+    void fillRightToLeft(){
+        for (int i = horizontalEnd - 2; i >= horizontalStart; i--) {
+            array[verticalEnd - 1][i] = (int) (Math.random() * 9 + 1);
+        }
+    }
+    void fillBottomToTop(){
+        for (int j = verticalEnd - 2; j > horizontalStart; j--) {
+            array[j][horizontalStart] = (int) (Math.random() * 9 + 1);
+        }
+    }
 
+    void printArray(){
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for (int j = 0; j < array[0].length; j++) {
                 System.out.print(array[i][j] + " ");
             }
         }
-
     }
 
 }
