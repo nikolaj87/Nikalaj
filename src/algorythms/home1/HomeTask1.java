@@ -17,6 +17,9 @@ public class HomeTask1 {
         System.out.println("элемент, появляюшийся в массиве 1 раз - " +
                 findSingleElem(new int[]{1, 1, 2, 2, 3, 4, 4, 5, 5}));
 
+        System.out.println(findSingleElem(new int[]{1, 1, 2, 2, 3, 3, 4, 4, 5}));
+
+
     }
 
     private static boolean isPalindromeStr (int number){
@@ -30,6 +33,8 @@ public class HomeTask1 {
 
     private static int findSingleElem(int[] arr){
         for (int i = 0; i < arr.length; i = i + 2) {
+            // если дошли до последнего элемента в массиве нечетного размера то возвращаем этот элемент
+            if (i == arr.length - 1 & arr.length % 2 == 1) return arr[i];
             if (arr[i] != arr[i+1]) return arr[i];
         }
         return -1;
