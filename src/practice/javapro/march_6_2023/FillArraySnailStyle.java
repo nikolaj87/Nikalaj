@@ -2,17 +2,26 @@ package practice.javapro.march_6_2023;
 
 public class FillArraySnailStyle {
 
-        private int[][] array = new int[5][6];
-        private int horizontalStart = 0;
-        private int horizontalEnd = array[0].length;
-        private int verticalStart = 0;
-        private int verticalEnd = array.length;
+        private int[][] array;
+        private int horizontalStart;
+        private int horizontalEnd;
+        private int verticalStart;
+        private int verticalEnd;
+
+    public FillArraySnailStyle(int[][] array, int horizontalStart, int horizontalEnd, int verticalStart, int verticalEnd) {
+        this.array = array;
+        this.horizontalStart = horizontalStart;
+        this.horizontalEnd = horizontalEnd;
+        this.verticalStart = verticalStart;
+        this.verticalEnd = verticalEnd;
+    }
 
     void fillArray() {
 
             while (horizontalStart < horizontalEnd && verticalStart < verticalEnd) {
 
                 if (verticalEnd - verticalStart == 1) {
+                    horizontalEnd++;
                     fillLeftToRight();
                     break;
                 }
@@ -34,23 +43,27 @@ public class FillArraySnailStyle {
     }
 
     void fillLeftToRight() {
-        for (int i = horizontalStart; i < horizontalEnd; i++) {
+        for (int i = horizontalStart; i < horizontalEnd - 1; i++) {
             array[verticalStart][i] = (int) (Math.random() * 9 + 1);
+            System.out.println("заполняю " + verticalStart + i);
         }
     }
     void fillTopToBottom(){
-        for (int j = verticalStart + 1; j < verticalEnd; j++) {
+        for (int j = verticalStart; j < verticalEnd; j++) {
             array[j][horizontalEnd - 1] = (int) (Math.random() * 9 + 1);
+            System.out.println("заполняю " + j + (horizontalEnd - 1));
         }
     }
     void fillRightToLeft(){
         for (int i = horizontalEnd - 2; i >= horizontalStart; i--) {
             array[verticalEnd - 1][i] = (int) (Math.random() * 9 + 1);
+            System.out.println("заполняю " + (verticalEnd - 1) + i);
         }
     }
     void fillBottomToTop(){
         for (int j = verticalEnd - 2; j > horizontalStart; j--) {
             array[j][horizontalStart] = (int) (Math.random() * 9 + 1);
+            System.out.println("заполняю " + j + (horizontalStart));
         }
     }
 

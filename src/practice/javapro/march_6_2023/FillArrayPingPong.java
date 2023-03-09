@@ -3,44 +3,67 @@ package practice.javapro.march_6_2023;
 public class FillArrayPingPong {
 
 
-    int[][] array = new int[6][7];
+    private final int[][] array;
+    private  int x;
+    private  int y;
+    private int counter = 0;
 
-    int x = 3;
-    int y = 2;
+    public FillArrayPingPong(int[][] array, int x, int y) {
+        this.array = array;
+        this.x = x;
+        this.y = y;
+    }
 
     void fillArrayPingPongStyle() {
 
-        while(true) {
-            while (x > 0 && y < array.length) {
-                array[x][y] = (int) (Math.random() * 8 + 1);
-                x--; y++;
-            } if (check2()) break;
-
-            while (x < array.length && y < array[0].length - 1) {
-                array[x][y] = (int) (Math.random() * 8 + 1);
-                x++; y++;
-            } if (check2()) break;
-
-            while (x < array.length - 1 && y > 0) {
-                array[x][y] = (int) (Math.random() * 8 + 1);
-                x++; y--;
-            } if (check2()) break;
-
-            while (x > 0 && y > 0) {
-                array[x][y] = (int) (Math.random() * 8 + 1);
-                x--;  y--;
-            } if (check2()) break;
+        rightTop();
+        for (int i = 0; i < 100; i++) {
+//===========================касание Top============
+            if (x == 0){
+                if (counter == 1) {
+                    rightBottom();
+                } else if (counter == 4){
+                    leftBottom();
+                }
+            }
+            if (check2()) break;
+//==============================касание Right========
+            if (y == array[0].length - 1){
+                if (counter == 2){
+                    leftBottom();
+                } else {
+                    leftTop();
+                }
+            }
+            if (check2()) break;
+//===============================касаие Bottom========
+            if (x == array.length - 1) {
+                if (counter == 3) {
+                    leftTop();
+                } else {
+                    rightTop();
+                }
+            }
+            if (check2()) break;
+//================================касание Left=======
+            if (y == 0) {
+                if (counter == 4) {
+                    rightTop();
+                } else {
+                    rightBottom();
+                }
+            }
+            if (check2()) break;
+//=====================================================
+            if(i == 99) {
+                System.out.println("получился бесконечный цикл\n" +
+                        "попробуйте другие параметры");
+                        break;
+            }
         }
         array[x][y] = (int) (Math.random() * 8 + 1);
-        printArray();
-
     }
 
-//    // метод проверяет касание к границе
-//    private boolean check1(){
-//        return x == 0 || y == 0 || x == array.length || y == array[0].length;
-//    }
-    // метод проверяет достижение угловых координат
     private boolean check2(){
         return ((x == array.length - 1 && y == array[0].length - 1) ||
                 (x == 0 && y == array[0].length - 1) ||
@@ -56,6 +79,38 @@ public class FillArrayPingPong {
 
             }
         }
+    }
+
+    private void rightTop(){
+        while (x > 0 && y < array[0].length - 1) {
+            array[x][y] = (int) (Math.random() * 8 + 1);
+            x--;
+            y++;
+        }
+        counter = 1;
+    }
+
+    private void rightBottom(){
+        while (x < array.length - 1 && y < array[0].length - 1) {
+            array[x][y] = (int) (Math.random() * 8 + 1);
+            x++; y++;
+        }
+        counter = 2;
+    }
+
+    private void leftBottom(){
+        while (x < array.length - 1 && y > 0) {
+            array[x][y] = (int) (Math.random() * 8 + 1);
+            x++; y--;
+        }
+        counter = 3;
+    }
+    private void leftTop(){
+        while (x > 0 && y > 0) {
+            array[x][y] = (int) (Math.random() * 8 + 1);
+            x--;  y--;
+        }
+        counter = 4;
     }
 
 }

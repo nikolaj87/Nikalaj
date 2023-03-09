@@ -13,8 +13,6 @@ public class FillArrayBothSides {
         while(i <= j){
             array[i] = (int)(Math.random()*100);
             array[j] = (int)(Math.random()*100);
-
-            System.out.println(i + " " + j);
             i++;
             j--;
         }
