@@ -1,4 +1,4 @@
-package practice.javapro.march_6_2023;
+package javatasks.march_6_2023;
 
 public class Dog  extends Animal{
 

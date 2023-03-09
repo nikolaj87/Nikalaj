@@ -1,4 +1,4 @@
-package allhometasks.algorythm.home1;
+package algorythms.home1;
 
 public class HomeTask1 {
     public static void main(String[] args) {

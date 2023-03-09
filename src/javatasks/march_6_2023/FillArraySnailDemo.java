@@ -1,4 +1,4 @@
-package practice.javapro.march_6_2023;
+package javatasks.march_6_2023;
 
 public class FillArraySnailDemo {
     public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class FillArraySnailDemo {
         int horizontalEnd = array[0].length;
         int verticalStart = 0;
         int verticalEnd = array.length;
+
         FillArraySnailStyle obj = new FillArraySnailStyle(array, horizontalStart,
                 horizontalEnd, verticalStart, verticalEnd);
         obj.fillArray();
