@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5f5beccb-fac5-4d98-9f7d-b28a600f5c75" name="Changes" comment="799" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/practice/seafightprocedures/SeaFightVsCympyter.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/practice/taskfrombook2/page244/Recursia.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2J5OA1mWcEWyEmEZENg3KrvU6kq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Slonick/IdeaProjects/home/src/AllHomeTasks/Home5/Task4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Slonick\IdeaProjects\home\src\AllHomeTasks\Home5\Task4" />
+      <recent name="C:\Users\Slonick\IdeaProjects\home\src\AllHomeTasks\Home4\Task3" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="javasummary.march10th" />
+      <recent name="algorythms" />
+      <recent name="javatasks" />
+      <recent name="allhometasks.algorythm.home1" />
+      <recent name="practice.javapro.march_6_2023" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="practice.calculator" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="practice.javapro.march_6_2023" />
+      <recent name="practice.morskojboj" />
+      <recent name="Practice" />
+      <recent name="AllHomeTasks.Home4.Task2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FillArrayBothSides">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatasks.march_13_2023.Demo" />
+      <module name="Home" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatasks.march_13_2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FillArrayBothSides" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatasks.march_6_2023.FillArrayBothSides" />
+      <module name="Home" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatasks.march_6_2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FillArraySnailDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatasks.march_6_2023.FillArraySnailDemo" />
+      <module name="Home" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatasks.march_6_2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FillPingPongStyleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatasks.march_6_2023.FillPingPongStyleDemo" />
+      <module name="Home" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatasks.march_6_2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuperHero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javasummary.march10th.SuperHero" />
+      <module name="Home" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javasummary.march10th.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="allhometasks.home5.Task1.Demo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="allhometasks.home5.Task1.Demo" />
+      <module name="Home" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="allhometasks.home5.Task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FillArrayBothSides" />
+        <item itemvalue="Application.FillArraySnailDemo" />
+        <item itemvalue="Application.FillPingPongStyleDemo" />
+        <item itemvalue="Application.SuperHero" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f5beccb-fac5-4d98-9f7d-b28a600f5c75" name="Changes" comment="" />
+      <created>1671364339690</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671364339690</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674067847049</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1674067847049</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674077395884</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1674077395884</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674077415433</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1674077415433</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674126695545</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1674126695546</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674129833744</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1674129833744</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674136042391</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1674136042391</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Merge remote-tracking branch 'github/master'">
+      <created>1674136568908</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1674136568908</updated>
+    </task>
+    <task id="LOCAL-00063" summary="777">
+      <created>1674144048903</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1674144048903</updated>
+    </task>
+    <task id="LOCAL-00064" summary="777">
+      <created>1674162122970</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1674162122970</updated>
+    </task>
+    <task id="LOCAL-00065" summary="777">
+      <created>1674162140384</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1674162140384</updated>
+    </task>
+    <task id="LOCAL-00066" summary="777">
+      <created>1674203502089</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1674203502089</updated>
+    </task>
+    <task id="LOCAL-00067" summary="777">
+      <created>1674208834491</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1674208834491</updated>
+    </task>
+    <task id="LOCAL-00068" summary="777">
+      <created>1674212311830</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1674212311830</updated>
+    </task>
+    <task id="LOCAL-00069" summary="777">
+      <created>1674217207771</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1674217207771</updated>
+    </task>
+    <task id="LOCAL-00070" summary="777">
+      <created>1674228923055</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1674228923102</updated>
+    </task>
+    <task id="LOCAL-00071" summary="777">
+      <created>1674236407957</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1674236407957</updated>
+    </task>
+    <task id="LOCAL-00072" summary="777">
+      <created>1674240802359</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1674240802359</updated>
+    </task>
+    <task id="LOCAL-00073" summary="777">
+      <created>1674241243315</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1674241243315</updated>
+    </task>
+    <task id="LOCAL-00074" summary="799">
+      <created>1674241301453</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1674241301454</updated>
+    </task>
+    <task id="LOCAL-00075" summary="799">
+      <created>1674241401751</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1674241401751</updated>
+    </task>
+    <task id="LOCAL-00076" summary="799">
+      <created>1674241650098</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1674241650098</updated>
+    </task>
+    <task id="LOCAL-00077" summary="799">
+      <created>1674507457570</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1674507457570</updated>
+    </task>
+    <task id="LOCAL-00078" summary="799">
+      <created>1674509353525</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1674509353525</updated>
+    </task>
+    <task id="LOCAL-00079" summary="799">
+      <created>1674589679751</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1674589679752</updated>
+    </task>
+    <task id="LOCAL-00080" summary="799">
+      <created>1674590016055</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1674590016055</updated>
+    </task>
+    <task id="LOCAL-00081" summary="799">
+      <created>1674590190733</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1674590190733</updated>
+    </task>
+    <task id="LOCAL-00082" summary="799">
+      <created>1674633683330</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1674633683330</updated>
+    </task>
+    <task id="LOCAL-00083" summary="799">
+      <created>1675270986249</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1675270986249</updated>
+    </task>
+    <task id="LOCAL-00084" summary="799">
+      <created>1675270999823</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1675270999823</updated>
+    </task>
+    <task id="LOCAL-00085" summary="799">
+      <created>1675345216854</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1675345216854</updated>
+    </task>
+    <task id="LOCAL-00086" summary="799">
+      <created>1675351806389</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1675351806389</updated>
+    </task>
+    <task id="LOCAL-00087" summary="799">
+      <created>1676227328849</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1676227328850</updated>
+    </task>
+    <task id="LOCAL-00088" summary="799">
+      <created>1676652037491</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1676652037492</updated>
+    </task>
+    <task id="LOCAL-00089" summary="799">
+      <created>1676798518504</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1676798518504</updated>
+    </task>
+    <task id="LOCAL-00090" summary="799">
+      <created>1676806866336</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1676806866336</updated>
+    </task>
+    <task id="LOCAL-00091" summary="799">
+      <created>1676807160275</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1676807160275</updated>
+    </task>
+    <task id="LOCAL-00092" summary="799">
+      <created>1676829773089</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1676829773089</updated>
+    </task>
+    <task id="LOCAL-00093" summary="799">
+      <created>1677691668788</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1677691668804</updated>
+    </task>
+    <task id="LOCAL-00094" summary="799">
+      <created>1677691697930</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1677691697930</updated>
+    </task>
+    <task id="LOCAL-00095" summary="799">
+      <created>1678118178037</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1678118178037</updated>
+    </task>
+    <task id="LOCAL-00096" summary="799">
+      <created>1678204298411</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1678204298411</updated>
+    </task>
+    <task id="LOCAL-00097" summary="799">
+      <created>1678227030951</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1678227030951</updated>
+    </task>
+    <task id="LOCAL-00098" summary="799">
+      <created>1678359692846</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1678359692847</updated>
+    </task>
+    <task id="LOCAL-00099" summary="799">
+      <created>1678361435995</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1678361435996</updated>
+    </task>
+    <task id="LOCAL-00100" summary="799">
+      <created>1678363692697</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1678363692697</updated>
+    </task>
+    <task id="LOCAL-00101" summary="799">
+      <created>1678650822511</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1678650822511</updated>
+    </task>
+    <task id="LOCAL-00102" summary="799">
+      <created>1678654200463</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1678654200463</updated>
+    </task>
+    <task id="LOCAL-00103" summary="799">
+      <created>1678737719526</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1678737719526</updated>
+    </task>
+    <task id="LOCAL-00104" summary="799">
+      <created>1678738227113</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1678738227113</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="888" />
+    <MESSAGE value="779" />
+    <MESSAGE value="780" />
+    <MESSAGE value="99" />
+    <MESSAGE value="Merge remote-tracking branch 'github/master'" />
+    <MESSAGE value="778" />
+    <MESSAGE value="777" />
+    <MESSAGE value="799" />
+    <option name="LAST_COMMIT_MESSAGE" value="799" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/home$MorskojBojDemo.ic" NAME="MorskojBojDemo Coverage Results" MODIFIED="1673523179834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Practice.TaskFromBook1.MorskojBoj.*</FILTER>
+    </SUITE>
+  </component>
+</project>
